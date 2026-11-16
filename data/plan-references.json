@@ -1,0 +1,126 @@
+{
+  "source_file": "CM03-f.docx",
+  "source_sha256": "a39003b4d1d7808f841f6bc3bca46796a5380d0515d29796e38e8c2215513c52",
+  "references": {
+    "scope": {
+      "section": "Summary and What to Do in this Project",
+      "incipit": "相關本研究的國科會計畫有: 關於污染排放權證交易制度及國際環境協議兩項議題的研究(陳孝琪，MOST109-2410-H305-047-MY2) 、國際電業碳中和發展趨勢及其對台電公司之策略探討(陳志仁，2821-1002)、從歐洲「能源貧窮」現象探討碳定價分配效果與制度設計(盧倩儀，MOST111-2410-H001-024)等。However, those projects do not exactly concern on the themes",
+      "paragraph_index": 110,
+      "paragraph_sha256": "1fbb6c14ec1091d4a2929227575c73f60b783cded269c6ed05b5267283c46c44"
+    },
+    "year1": {
+      "section": "Theme 1 概述",
+      "incipit": "Theme 1 analyzes the theories related to the concepts of CSR, CS,",
+      "paragraph_index": 112,
+      "paragraph_sha256": "2599747e41507da1773d65d5b90cdb24a83bdc51bc6487e9c5c3e09b7837e9ce"
+    },
+    "year2": {
+      "section": "Theme 2 概述",
+      "incipit": "The ET problem does not only concern a matching solution between buyers",
+      "paragraph_index": 114,
+      "paragraph_sha256": "bc6bc4835071dcfca16659b6da8a6adad356f0c7a6f43f57a59d94ceeff2f5b1"
+    },
+    "year3": {
+      "section": "Theme 3 概述",
+      "incipit": "To resolve hierarchical and real number nature of sustainability indicators, the study",
+      "paragraph_index": 116,
+      "paragraph_sha256": "e313a46b34a817543c23e68015ec6c3ce3be001a6e9abf33618ee93744d20ddb"
+    },
+    "products": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "Two types of permits are sold, including green energy corporate and green",
+      "paragraph_index": 424,
+      "paragraph_sha256": "7a9ad2b36585d542dc738eaf16668e4f1f17b5776befe38205dfce68fd1af09a"
+    },
+    "roles": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "In this study, the corporates that purchase permits are denoted as Receivers.",
+      "paragraph_index": 429,
+      "paragraph_sha256": "af48948a5213ac3fbe403318b916fad440a15d10c77c954dac49bfa9f79ca49d"
+    },
+    "binary": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "1. Initially, it is formulated as the transportation-like problem. Suppose we have",
+      "paragraph_index": 431,
+      "paragraph_sha256": "41b00ed7f546164dee648847c751dbe276dc37d20290bdda25bda7882622350f"
+    },
+    "supply": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "Suppose that the entity ⅈ with ⅈϵ{1, . . . , m},",
+      "paragraph_index": 432,
+      "paragraph_sha256": "5f56b1e992dae253027726480c7c4808695167c4bfdac488976cd78d3d18168d"
+    },
+    "amount": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "If xij denotes the amount of permit transported from entity ⅈ to",
+      "paragraph_index": 433,
+      "paragraph_sha256": "946786a82ae03e1bcac3db19217d3cb3dfe577b4c5d30c0a73eb1c4f3283e7c4"
+    },
+    "reputation": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "Furthermore, the selection of the idea energy receivers may be given a",
+      "paragraph_index": 450,
+      "paragraph_sha256": "7e8389a6d7638d975cb28e1992996353175b694b984e2fce518bf474952c1bff"
+    },
+    "four": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "With the consideration of multiple object functions: Minimize cost of receivers (TC),",
+      "paragraph_index": 452,
+      "paragraph_sha256": "7d5284dad61a96d5c589d056deffbcd4866a12664a9434bff3082bc0d7bb188b"
+    },
+    "pareto": {
+      "section": "§3.2.1 ET problem",
+      "incipit": "Over the years, researchers have been interested in making Genetic Programming (GP)",
+      "paragraph_index": 453,
+      "paragraph_sha256": "f0f78a767454047f7d0e61f4f211606570556adf7026d0691d2e7792728ee867"
+    },
+    "emobet": {
+      "section": "§3.2.2 The EMO based ET (EMOBET) approach",
+      "incipit": "To solve the advanced ET problem, the EMOBET approach is proposed. The",
+      "paragraph_index": 512,
+      "paragraph_sha256": "765d617b2dace4f2aa96d0c437b553a13b5018f57e581d9a8d16150c0f6dda7a"
+    },
+    "encoding": {
+      "section": "§3.2.2 Representation",
+      "incipit": "Representation: A chromosome is encoded by a combination of 0–1 for the",
+      "paragraph_index": 516,
+      "paragraph_sha256": "d2c6e6ebb2c31dab0d9b113ad9951863444e576a3f7dd768172011cfd44d84d6"
+    },
+    "vectors": {
+      "section": "§3.2.2 Adaptive reference vector update",
+      "incipit": "To fit the irregular Pareto front shape, this study based on Liu",
+      "paragraph_index": 527,
+      "paragraph_sha256": "e62678f71c15fb9e4777b7e434d8bfdbc2f8663a29aeea4c47163d01476f5dd8"
+    },
+    "vector-parameters": {
+      "section": "§3.2.2 Adaptive reference vector update",
+      "incipit": "In this study, the parameters θg and IG_set control the update frequency",
+      "paragraph_index": 531,
+      "paragraph_sha256": "d17fdcb26a95a2eeec5effb45208bea1e8404289b0af1b73a7e0e294d66599db"
+    },
+    "comparison": {
+      "section": "§3.2.3 The experiment and performance comparison",
+      "incipit": "The following five methods are compared from the perspectives of the model",
+      "paragraph_index": 551,
+      "paragraph_sha256": "7644fe9a8deee0b283128bfe98cbdd9127e66144fcb8e2251e7bb0df812e1853"
+    },
+    "ablation": {
+      "section": "§3.2.3 The experiment and performance comparison",
+      "incipit": "The following two experiments are implemented to recognize the value of this",
+      "paragraph_index": 552,
+      "paragraph_sha256": "60a0214cf269b304af8bf549cfec806af9ef1f9c1a5bf444668d960add785556"
+    },
+    "difficulty": {
+      "section": "第二年預計可能遭遇之困難及解決途徑",
+      "incipit": "The four objective functions presented in the proposal are in genetic format.",
+      "paragraph_index": 558,
+      "paragraph_sha256": "fa3d1fe061a089b9549690397970ee1f6ef6c8cf170e0db2b1ceb8d11f0416e9"
+    },
+    "hrs": {
+      "section": "§3.3.4 The deliverables of the hierarchical RS approach",
+      "incipit": "The deliverables of the HRS support: 1. The core sustainability indicators for",
+      "paragraph_index": 850,
+      "paragraph_sha256": "146196930bb3f424212b0b8687ccdb0e8f003942975d7d5de0da97ea015482ef"
+    }
+  }
+}

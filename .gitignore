@@ -1,0 +1,12 @@
+# 原始研究素材僅留在本機，不隨網站公開。
+/*.csv
+/*.docx
+/Description_EUTL_database.pdf
+/about_eutl_log.txt
+/EUTL_url.txt
+/*.ipynb
+.tools/
+.work/
+__pycache__/
+*.pyc
+

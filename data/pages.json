@@ -1,0 +1,7 @@
+[
+  {"slug":"start","title":"研究脈絡與問題","description":"CM03 三年關係、第二年研究目標與資料需求。","nav":"home"},
+  {"slug":"carbon-basics","title":"碳交易基礎","description":"排放量、配額、履約，以及制度、交易單位與紀錄。","nav":"home"},
+  {"slug":"cm03","title":"CM03 計畫解讀","description":"逐段對照計畫章節與原文起句，區分摘要、解讀與示例。","nav":"cm03"},
+  {"slug":"sources","title":"研究資料","description":"EUTL、資料庫、交易 log 欄位與使用限制。","nav":"sources"},
+  {"slug":"genetic-algorithm","title":"基因演算法：表示、選擇與變異","description":"GA 的基本機制、示意例子及其與 CM03 的關係。","nav":"home"}
+]

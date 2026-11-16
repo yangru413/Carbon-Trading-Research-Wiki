@@ -1,0 +1,49 @@
+<main id="main" class="wrap">
+<header class="article-hero"><div class="breadcrumbs"><a href="index.html">研究指南</a> / CM03 計畫解讀</div><span class="tag">計畫原文解讀</span><h1>CM03 計畫解讀</h1><p class="lede" data-plan-ref="year2">第二年以多目標排放交易配對為核心，同時考慮買方成本、賣方利潤、買方永續聲譽總和與配對數。</p><div class="meta"><span>主題：第二年 Theme 2</span><span>更新：2026-11-16</span></div></header>
+<div class="article-layout"><aside class="toc" aria-label="本頁目錄"><strong>本頁目錄</strong><a href="#basics">問題與交易對象</a><a href="#three-years">三年研究關係</a><a href="#objectives">四個目標與模型</a><a href="#pareto">Pareto 與權重</a><a href="#methods">EMOBET 與實驗</a><a href="#questions">待釐清事項</a><a href="#references">依據與標註方式</a></aside>
+<article class="prose plan-prose">
+<section id="basics"><h2>問題與交易對象</h2>
+<p data-plan-ref="scope,roles">計畫將交易問題描述為：需要購買的一方要決定向誰買、買多少；提供的一方要決定賣給誰、賣多少。§3.2.1 把購買方稱為 Receivers，把出售方稱為 Entities。</p>
+<p data-plan-ref="products" data-kind="interpretation">交易商品仍需界定。§3.2.1 的開頭涉及綠能企業與綠色憑證機制，因此本網站採 EU ETS／EUA 作為研究背景時，不能將計畫所有商品直接視為 EUA，也不能假設不同憑證可以互換。</p>
+<p data-kind="external" data-external="eu-ets">EU ETS 是總量管制與交易制度，EUA 是該制度中的排放配額。制度背景、配額與登記資料的說明可見碳交易基礎章節；這些官方制度知識不是 CM03 原文的逐字摘要。</p>
+</section>
+<section id="three-years"><h2>三年研究關係</h2>
+<figure class="research-figure plan-image"><a href="assets/cm03-figure-2.png" target="_blank" rel="noopener"><img src="assets/cm03-figure-2.png" width="1268" height="714" loading="lazy" alt="CM03 研究架構原圖：第一年永續預測、第二年 EMOBET 交易配對及四目標、第三年階層式粗糙集與演化操作支援"></a><figcaption>原圖來源：CM03-f.docx，Figure 2「The framework of the study.」，位於 §3.2.1 前的研究架構說明。使用者提供原檔，直接抽出、未改繪；圖中箭頭代表計畫安排，非已驗證成果。點圖看原尺寸。原圖權利歸原權利人；本站依使用者提供的計畫作研究說明。</figcaption></figure>
+<p data-plan-ref="year1">第一年規劃企業永續預測模型，研究企業永續水準及較弱的指標，並提出相應的改善方向。</p>
+<p data-plan-ref="year2">第二年規劃多目標交易配對系統及 EMOBET 方法，尋找兼顧不同參與者需求的候選配對方案。</p>
+<p data-plan-ref="year3,hrs">第三年規劃階層式粗糙集規則萃取，處理具有階層及實數特性的指標；計畫也希望用萃取的知識支援 EMOBET 的初始族群、交配與突變限制。</p>
+<p data-kind="editorial">本頁整理研究計畫的安排，不代表三年工作已全部完成，也不提供本網站執行的模型或實驗成果。</p>
+</section>
+<section id="objectives"><h2>四個目標與模型</h2>
+<p data-plan-ref="year2,four">計畫提出四個方向：降低買方總成本（TC）、提高賣方總利潤（TP）、提高買方永續聲譽總和（P_SD），以及增加配對數（No_M）。這些是研究目標，不能直接理解為已同時達成的成效。</p>
+<div class="objectives" aria-label="四個計畫目標"><div class="objective"><b>成本 TC ↓</b><span>買方總成本</span></div><div class="objective"><b>利潤 TP ↑</b><span>賣方總利潤</span></div><div class="objective"><b>聲譽 P_SD ↑</b><span>買方永續聲譽總和</span></div><div class="objective"><b>配對數 No_M ↑</b><span>配對成立的數量</span></div></div>
+<p data-plan-ref="reputation">計畫把買方的永續聲譽連到第一年模型提出的企業永續水準，或成為永續企業的機率。它不只是一般口碑，也不是單憑 EUTL 移轉紀錄就能取得的欄位。</p>
+<p data-plan-ref="binary,supply,amount" data-kind="interpretation">基礎模型段落先以 0／1 表示配對是否成立，後續又以 x<sub>ij</sub> 表示交易數量。兩者的決策意義不同；實作前需要統一模型版本、索引與變數，而不是將同名符號直接合併使用。</p>
+<p data-plan-ref="supply,amount">供給與需求的表述中，出售方有可提供的單位數，購買方有需求；模型希望在相關供需限制下，使交易成本最小。詳細公式的符號與條件仍應以原始文件逐項核對。</p>
+</section>
+<section id="pareto"><h2>Pareto 與權重</h2>
+<figure class="research-figure"><img src="assets/pareto-tradeoff.svg" width="900" height="440" loading="lazy" alt="A 的成本八十、利潤二十，B 的成本九十、利潤三十；成本愈低愈好、利潤愈高愈好，兩方案互不支配"><figcaption>本站自製示意，數字取自本節假設例子；支配關係依據 CM03-f.docx 的 Pareto 說明，原文定位見本節段落來源。非原論文圖、非市場或實驗數據，兩點不構成完整 Pareto 前緣。</figcaption></figure>
+<p data-plan-ref="pareto">計畫說明兩種多目標處理方式：把多個目標合成一個適應值，或保留各目標分別比較。進階交易問題採用 Pareto 支配關係：一方案在所有目標都不差於另一方案，且至少一項較好，才構成支配。</p>
+<p data-kind="example">以僅有成本與利潤的假設方案為例：A 的成本 80、利潤 20；B 的成本 90、利潤 30。成本希望低、利潤希望高，所以 A 與 B 各有優勢，互不支配。這些是示意評估值，不是真實價格、會計帳或實驗結果；其餘條件假設相同。</p>
+<p data-plan-ref="vectors" data-kind="interpretation">參考向量的權重不宜直接當成決策者對四個目標的偏好。該段將權重與分配到向量附近的非支配解數量連結，用於引導向量更新。因此不能未經證據就把四個研究目標各設為 25%，稱作計畫原定設定。</p>
+</section>
+<section id="methods"><h2>EMOBET 的流程與評估安排</h2>
+<p data-plan-ref="emobet">計畫的 EMOBET 流程分為初始化與迭代兩部分。初始化包括參考向量及其權重、隨機族群 P 與初始檔案集合 A；迭代則透過交配與突變產生後代 O、更新自適應參考向量，再從 P 與 O 的聯集中選出新族群，直到符合停止條件。</p>
+<div class="flow" aria-label="依計畫 §3.2.2 整理的概念流程"><span>初始化<br>族群與向量</span><i aria-hidden="true">→</i><span>產生後代<br>交配與突變</span><i aria-hidden="true">→</i><span>更新向量<br>與選擇族群</span><i aria-hidden="true">→</i><span>檢查停止<br>或繼續迭代</span></div>
+<p data-plan-ref="emobet" data-kind="interpretation">上圖是該流程段落的概念整理，省略編碼、限制處理與選擇細節；原文出現的 0.01 是停止門檻的例子，不是本網站已確認可直接套用的實驗參數。</p>
+<p data-plan-ref="vectors,vector-parameters">自適應參考向量用來配合不規則 Pareto 前緣。原文將非支配解分配到夾角較小的參考向量，依解的分布更新權重與向量；θg 與 IG_set 則與更新開始時機及更新頻率相關。</p>
+<p data-plan-ref="comparison">比較規劃列出 Hungarian（基礎問題）、EMOBET（進階問題），以及 NSGA-III、原文寫作 REVA、ARMOEA。評估面向包括 IGD、平均運算時間、買賣配對率，以及各目標上的 Pareto 解分布。</p>
+<p data-plan-ref="comparison" data-kind="interpretation" data-external="rvea">方法名稱需要核對：計畫寫作 REVA，所引 Cheng 等人（2016）的書目對應 RVEA。此處保留原文寫法與書目差異，不默默更正計畫，也不將所有比較方法的細節視為已核實。</p>
+<p data-plan-ref="ablation">計畫另外規劃 θg 與 IG_set 的參數分析，以及針對參考向量更新、族群選擇兩個組件的消融實驗，用來探索各組件對 EMOBET 表現的貢獻。</p>
+<p data-plan-ref="comparison,ablation" data-kind="interpretation">執行比較時仍需明定配對率分母、IGD 參考解集合、停止條件與運算環境。這是根據評估規劃整理的實作檢核，不是原文已提供了所有設定，也不是已完成的實驗。</p>
+</section>
+<section id="questions"><h2>模型與資料的待釐清事項</h2>
+<p data-plan-ref="products,binary,amount,encoding" data-kind="interpretation">目前應保留的問題包含商品與制度對應、二元配對與交易量的區別，以及編碼描述。§3.2.2 一方面描述 n×m 個二元變數，另一方面給出對數形式的染色體長度；在沒有進一步說明前，不自行指定其唯一正確實作。</p>
+<p data-plan-ref="reputation,difficulty" data-kind="interpretation">聲譽、成本與利潤的資料及目標函數設定仍需對齊產業與研究對象。計畫的困難說明也指出，四個目標是一般形式，特定產業可能需要額外變數。這些問題應記錄為待確認設定，不以假造數值補齊。</p>
+</section>
+<section id="references"><h2>原文依據與標註方式</h2>
+<p data-kind="editorial">每段摘要標明原始檔、章節及可搜尋的段落起句；展開來源可查看定位文字。來源定位經本機原始 DOCX 核對。段落編號只作輔助，不當成 Word 原有編號；頁碼可能隨排版改變，故不單獨用頁碼定位。</p>
+<p data-kind="editorial">「計畫摘要」指原文主張的整理；「本站解讀」指根據原文提出的解釋或問題；「示意範例」不是真實研究資料。官方制度與外部書目另標來源。原始計畫未隨網站公開，這裡只保留定位所需的短起句。</p>
+</section>
+[[extensions:plan]]
+</article></div></main>

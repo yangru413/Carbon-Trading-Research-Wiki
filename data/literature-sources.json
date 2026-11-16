@@ -1,0 +1,35 @@
+{
+  "ea2002": {
+    "authors":"A. E. Eiben 與 M. Schoenauer",
+    "year":"2002",
+    "title":"Evolutionary computing",
+    "publication":"Information Processing Letters, 82(1), 1–6",
+    "doi":"10.1016/S0020-0190(02)00204-1",
+    "metadata_url":"https://research.vu.nl/en/publications/evolutionary-computing/",
+    "url":"https://arxiv.org/pdf/cs/0511004",
+    "read_scope":"作者公開版本 arXiv:cs/0511004v1（2005-11-01），核讀 §1–§4.6、§5.1 與 §5.4；出版年為 2002，版本上傳年為 2005，兩者分開記錄。",
+    "supports":"EA／GA／GP 關係、表示法、親代與存活者選擇、交配與突變、停止與獨立重複評估。",
+    "accessed":"2026-11-16"
+  },
+  "whitley2005": {
+    "authors":"Darrell Whitley",
+    "year":"2005",
+    "title":"Practical Guidelines for Using Evolutionary Algorithms",
+    "publication":"CEC Edinburgh 2005 作者講義，Colorado State University",
+    "url":"https://www.cs.colostate.edu/~genitor/Whitley_CEC05.pdf",
+    "read_scope":"核讀印刷投影片 3–11、21、25–28；一個 PDF 頁面含兩張投影片，投影片號不等於 PDF 頁碼。非同儕審查期刊論文。",
+    "supports":"GA 直觀流程、錦標賽選擇、單點交配、表示法與測試問題限制。",
+    "accessed":"2026-11-16"
+  },
+  "deb2000": {
+    "authors":"Kalyanmoy Deb",
+    "year":"2000",
+    "title":"An efficient constraint handling method for genetic algorithms",
+    "publication":"Computer Methods in Applied Mechanics and Engineering, 186(2–4), 311–338",
+    "doi":"10.1016/S0045-7825(99)00389-8",
+    "url":"https://www.sciencedirect.com/science/article/pii/S0045782599003898",
+    "read_scope":"僅核對出版頁索引可見書目與摘要；直接開啟全文入口回傳 403，未分析完整演算法、證明或實驗。",
+    "supports":"約束處理是獨立設計問題，罰函數參數選擇存在困難；不據此聲稱本文實作 Deb 方法。",
+    "accessed":"2026-11-16"
+  }
+}
