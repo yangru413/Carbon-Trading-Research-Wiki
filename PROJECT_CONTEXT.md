@@ -14,6 +14,7 @@
 - 每批先報估時與影響；本批完成後停止。不推送、不公開發布、不製作 Word／PDF，後續完善先討論。
 
 ## 目前成果
+- 已推送 GitHub 並啟用 Pages： https://yangru413.github.io/Carbon-Trading-Research-Wiki/ 。2026-11-16 已實測 22 個公開頁面／資源 HTTP 200，公開瀏覽器的四欄卡片、圖片、動畫、GA 文章與返回路徑及手機寬度通過；詳見 docs/deployment-report.md。
 - 9 個靜態頁面：首頁、研究脈絡、碳交易基礎、CM03、研究資料、Pareto、EMOBET、交易 log、基因演算法。
 - content/ 是正文；data/pages.json 登記文章；data/topics.json 管理卡片；data/plan-references.json 管理 CM03 定位；data/literature-sources.json 管理外部文獻與閱讀範圍。
 - 基因演算法文章包含逐段來源、自製流程圖、可重算的四位元限制式範例與書目。不是碳交易實驗，也不是 EMOBET 正式實作。
@@ -27,12 +28,12 @@
 - NOTESD 約 1.51 GB；抽樣含 ERU，不能稱全檔純 EUA。早期文字異常未確認是否為編碼問題。
 - Python：C:/Users/yuhua/anaconda3/python.exe。Playwright 在 .tools/vendor；使用既有 Edge，必要時既有 Chrome，不下載新瀏覽器。
 - 正常使用 scripts/build-demo.py 與 scripts/check-demo.py；prepare-revision.py、reorganize-guidance.py 是已退役遷移腳本，不重跑。verify-ga-example.py 獨立核算教學範例。
-- 預定倉庫：https://github.com/yangru413/Carbon-Trading-Research-Wiki 。尚未發布，網址不代表已部署。
+- 公開倉庫：https://github.com/yangru413/Carbon-Trading-Research-Wiki 。Pages 已部署並驗證；後續新增內容依當批授權處理。
 
 ## 尚未完成
 - 其餘主線與待整理延伸；未做碳交易最佳化實驗，也沒有實證效能結果。
 - 使用者審閱本批成果；引文是否支持主張仍需人工判斷。
-- GitHub 推送、Pages 部署與公開網址測試，須另獲授權。
+- 首次 GitHub 推送、Pages 部署與公開網址測試已完成；後續研究內容擴充先討論。
 - Word／PDF 由使用者撰寫，docs/submission-guide.md 提供綱要。
 
 自動檢查通過不代表整站完成學術審查或完整作業交付。
