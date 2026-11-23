@@ -51,7 +51,7 @@
         "移轉改變配額持有量；減排需要排放變化的證據。",
         "交易商品、制度與適用期間要先對齊。"
       ],
-      "image": "assets/allowance-exchange.svg",
+      "image": "assets/allowance-exchange-slides.svg",
       "alt": "企業甲乙移轉二十單位配額，持有量改變，不代表實際減排",
       "caption": "本站自製示意；甲乙與20單位為教學假設，非實際成交。",
       "output": "配額移轉改變持有量；實際減排需要排放變化的證據。",
@@ -240,7 +240,7 @@
         "alt": "親代1100和0011交配得到1111和0000，再檢查最多選兩項的限制",
         "caption": "本站自製，沿用Wiki四位元例子；交配依Whitley（2005）投影片11，限制為本站假設。不是碳交易編碼或效能結果。"
       },
-      "diagram_position": "beside-points"
+      "diagram_position": "beside-overview"
     },
     {
       "title": "ACO：逐步構造候選方案",
@@ -287,7 +287,7 @@
         "alt": "四城市候選巡迴路線，完成後評估再更新資訊素",
         "caption": "本站自製TSP概念圖，依Dorigo等人（1996）§II–III；路線為示意，非論文原圖或實驗結果。"
       },
-      "diagram_position": "beside-points"
+      "diagram_position": "beside-overview"
     },
     {
       "title": "公平比較之前，先檢查可行性",
@@ -335,7 +335,8 @@
         "mobile": "assets/feasibility-example-mobile.svg",
         "alt": "乙供給上限10丙上限5，甲需求12；方案A乙8丙4可行，方案B乙11丙1超額",
         "caption": "本站自製供需示意；所有數字均為教學假設。可行性指每項限制均滿足，非真實研究結果。"
-      }
+      },
+      "diagram_position": "beside-overview"
     },
     {
       "title": "留下能讓下一屆重做的研究",

@@ -55,10 +55,12 @@ for i,s in enumerate(slides,1):
     for link in s['links']:
         target=link['href'].split('#')[0]
         assert (R/'content'/target).is_file() or target in ('pareto.html','emobet.html','transaction-log.html'),link
-    content=''
-    if s.get('lead'): content+=f'<p class="slide-lead">{e(s["lead"])}</p>'
+    lead=f'<p class="slide-lead">{e(s["lead"])}</p>' if s.get('lead') else ''
+    flow=''
+    content=lead
     if s.get('flow'):
-        content+='<ol class="research-flow" aria-label="概念流程">'+''.join(f'<li>{node_icon(x,s.get("flow_icons",[None]*len(s["flow"]))[n])}<span>{e(x)}</span></li>' for n,x in enumerate(s['flow']))+'</ol>'
+        flow='<ol class="research-flow" aria-label="概念流程">'+''.join(f'<li>{node_icon(x,s.get("flow_icons",[None]*len(s["flow"]))[n])}<span>{e(x)}</span></li>' for n,x in enumerate(s['flow']))+'</ol>'
+        content+=flow
     if s.get('loop'): content+=f'<p class="loop-caption">↺ {e(s["loop"])}</p>'
     if s.get('columns'):
         items=[]
@@ -73,8 +75,11 @@ for i,s in enumerate(slides,1):
         content+=f'<div class="slide-columns"><div>{points}</div><figure><img src="{e(s["image"])}" alt="{e(s["alt"])}"><figcaption>{e(s["caption"])}</figcaption></figure></div>'
     elif s.get('diagram_position')=='beside-points':
         content+=f'<div class="diagram-with-copy"><div>{points}</div>{figure(s["diagram"])}</div>'
+    elif s.get('diagram_position')=='beside-overview':
+        copy=content.replace(flow,'',1) if flow else content
+        content=flow+f'<div class="overview-pair"><div>{copy}{points}</div>{figure(s["diagram"])}</div>'
     else: content+=points
-    if s.get('diagram') and s.get('diagram_position')!='beside-points':content+=figure(s['diagram'])
+    if s.get('diagram') and s.get('diagram_position') not in ('beside-points','beside-overview'):content+=figure(s['diagram'])
     if s.get('quiz'):
         content+=f'<details class="slide-check"><summary><span class="quiz-label">想一想</span><span class="quiz-question">{e(s["quiz"]["question"])}</span><span class="quiz-action"><span class="quiz-show">點我看答案 ＋</span><span class="quiz-hide">收起答案 −</span></span></summary><div class="quiz-answer"><strong>參考答案</strong><p>{e(s["quiz"]["answer"])}</p></div></details>'
     tag='h1' if i==1 else 'h2'
