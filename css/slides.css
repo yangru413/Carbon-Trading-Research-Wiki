@@ -20,3 +20,32 @@
 .deck-mode .slide-content,.deck-mode .slide-source,.deck-mode .slide{overflow:visible}.deck-mode{overflow:visible}.diagram-explanation{text-align:center;margin-top:8px}.slide .diagram-explanation p,.deck-mode .slide-content .diagram-explanation p{font-size:13px;line-height:1.55;margin:3px 0}.teaching-diagram:has(.diagram-explanation) figcaption{text-align:center}.deck-mode #slide-6 .teaching-diagram img,.deck-mode #slide-7 .teaching-diagram img{max-height:180px}.deck-mode #slide-8 .teaching-diagram img{max-height:180px}.deck-mode .slide-zoom .slide-points li{font-size:16px}.deck-mode .slide-zoom .slide-columns img{max-height:220px}
 @media screen and (min-width:751px){.deck-mode.answer-expanded .presentation{height:auto;min-height:100dvh;grid-template-rows:48px auto 48px 24px}.deck-mode.answer-expanded .slides{height:auto}.deck-mode.answer-expanded .slide{height:auto;min-height:calc(100dvh - 126px);grid-template-rows:104px auto 40px auto}}
 @media(max-width:750px){.deck-mode .presentation{height:auto;min-height:100dvh;grid-template-rows:70px auto 108px auto}.deck-mode .slides{height:auto}.deck-mode .slide{height:auto;min-height:calc(100dvh - 226px);grid-template-rows:184px auto auto auto;overflow:visible}.deck-mode .slide-source{overflow:visible}.deck-mode #slide-6 .teaching-diagram img,.deck-mode #slide-7 .teaching-diagram img,.deck-mode #slide-8 .teaching-diagram img{max-height:none}.slide .diagram-explanation p,.deck-mode .slide-content .diagram-explanation p{font-size:13px}.deck-mode .deck-hint{padding:6px 0 12px}}
+
+/* Distribute the available reading area without enlarging the fixed page frame. */
+@media screen and (min-width:751px){
+  .deck-mode .slide-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap:12px;
+  }
+  .deck-mode .presentation .slide-content>*{
+    margin-block:0;
+    flex-shrink:0;
+  }
+  .deck-mode .slide-content>.slide-concepts>div{
+    min-height:clamp(112px,15vh,150px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:20px;
+  }
+  .deck-mode.answer-expanded .slide-content{
+    justify-content:flex-start;
+    gap:20px;
+    padding-block:16px;
+  }
+  .deck-mode #slide-9 .slide-concepts>div{
+    justify-content:flex-start;
+  }
+}
