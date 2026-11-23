@@ -11,7 +11,7 @@ manuscript=json.loads((R/'data/research-slides.json').read_text(encoding='utf-8'
 assert len(manuscript)==10
 with sync_playwright() as p:
     b=p.chromium.launch(channel='msedge',headless=True)
-    for width,height in [(1440,1000),(1280,720),(390,844)]:
+    for width,height in [(1280,720),(1366,768),(1440,900),(1920,1080),(390,844)]:
         context=b.new_context(viewport={'width':width,'height':height},reduced_motion='reduce')
         page=context.new_page();errors=[]
         page.on('pageerror',lambda error:errors.append(str(error)))
@@ -33,16 +33,25 @@ with sync_playwright() as p:
             assert page.locator(f'#slide-{i+1} .slide-output strong').inner_text() in ('懶人包：','產出成果：')
             geometry=page.locator(f'#slide-{i+1}').evaluate('''(s)=>{let b=s.getBoundingClientRect(),t=s.querySelector('h1,h2').getBoundingClientRect(),q=s.querySelector('.teaching-question').getBoundingClientRect();return [b.width,b.height,b.y,t.y,q.y,scrollY]}''')
             if baseline is None:baseline=geometry
-            assert all(abs(a-b)<1 for a,b in zip(geometry,baseline)),(width,i,'layout shifted',geometry,baseline)
+            if width>750:
+                assert all(abs(a-b)<1 for a,b in zip(geometry,baseline)),(width,i,'layout shifted',geometry,baseline)
             content=page.locator(f'#slide-{i+1} .slide-content')
-            content.evaluate('(n)=>n.scrollTop=n.scrollHeight')
-            assert abs(page.locator(f'#slide-{i+1} h1,#slide-{i+1} h2').bounding_box()['y']-baseline[3])<1
-            content.evaluate('(n)=>n.scrollTop=0')
+            metrics=page.locator(f'#slide-{i+1}').evaluate("""s=>{const c=s.querySelector('.slide-content'),f=s.querySelector('.slide-source');return {content:[c.scrollHeight,c.clientHeight],source:[f.scrollHeight,f.clientHeight],document:[document.documentElement.scrollHeight,innerHeight]}}""")
+            bad=page.locator('.presentation').evaluate("""r=>[r,...r.querySelectorAll('*')].filter(n=>n.getClientRects().length&&['overflowX','overflowY'].some(k=>['auto','scroll'].includes(getComputedStyle(n)[k]))).map(n=>n.className)""")
+            assert not bad,(width,i,'internal scroll container',bad)
+            if width>750:
+                assert all(a<=b+1 for a,b in metrics.values()),(width,i,'PC content overflow',metrics)
+            if i in (0,1,5,6,7,8):
+                assert page.locator(f'#slide-{i+1} img:visible').count()>0,(i,'missing teaching illustration')
+            if i in (5,6):
+                explanation=page.locator(f'#slide-{i+1} .diagram-explanation')
+                assert explanation.is_visible() and explanation.locator('li').count()==0
+                assert explanation.evaluate('(n)=>getComputedStyle(n).textAlign')=='center'
             for node in nodes.all():
                 assert node.locator('svg.node-icon').count()==1
                 assert node.evaluate('(n)=>["Top","Right","Bottom","Left"].every(x=>parseFloat(getComputedStyle(n)["border"+x+"Width"])>0)'),(width,i,'incomplete node frame')
             page.screenshot(path=str(out/f'slides-{width}-{i+1}.png'),full_page=True)
-            results.append({'width':width,'height':height,'slide':i+1,'overflow':False,'frame_width':geometry[0],'frame_height':geometry[1],'title_y':geometry[3],'question_y':geometry[4],'window_scroll_y':geometry[5]})
+            results.append({'width':width,'height':height,'slide':i+1,'overflow':False,'internal_scroll_containers':0,'metrics':metrics,'frame_width':geometry[0],'frame_height':geometry[1],'title_y':geometry[3],'question_y':geometry[4],'window_scroll_y':geometry[5]})
         page.select_option('#slide-select','0')
         assert page.locator('#side-prev').is_disabled()
         page.locator('#side-next').click()
@@ -62,7 +71,8 @@ with sync_playwright() as p:
         page.locator('summary').click()
         assert page.locator('details').get_attribute('open') is not None
         assert page.locator('.quiz-answer').is_visible() and page.locator('.quiz-hide').is_visible()
-        assert abs(page.locator('#slide-5 h2').bounding_box()['y']-baseline[3])<1
+        if width>750: assert abs(page.locator('#slide-5 h2').bounding_box()['y']-baseline[3])<1
+        assert page.locator('#slide-5 .slide-content').evaluate('(n)=>getComputedStyle(n).overflowY')=='visible'
         page.locator('summary').focus();page.keyboard.press('Enter')
         assert not page.locator('.quiz-answer').is_visible()
         page.locator('#view-all').click();assert page.locator('.slide:visible').count()==10
@@ -73,15 +83,19 @@ with sync_playwright() as p:
         page.emulate_media(media='print');assert page.locator('.slide:visible').count()==10
         assert not errors,errors
         context.close()
+    graph=b.new_page()
+    graph.goto((R/'assets/slides-workflow.svg').as_uri())
+    bounds=graph.locator('svg').evaluate('s=>{const box=s.viewBox.baseVal;return [...s.querySelectorAll("text")].map(n=>({text:n.textContent,b:n.getBBox()})).filter(x=>x.b.x<0||x.b.x+x.b.width>box.width||x.b.y<0||x.b.y+x.b.height>box.height).map(x=>x.text)}')
+    assert not bounds,('graph text outside canvas',bounds)
     context=b.new_context(java_script_enabled=False)
     page=context.new_page();page.goto((R/'research-slides.html').as_uri())
     assert page.locator('.slide:visible').count()==10
     b.close()
-files=['data/research-slides.json','content/research-slides.html','research-slides.html','css/slides.css','js/slides.js','scripts/check-slides.py','scripts/render-research-slides.py','assets/slides-workflow.svg','assets/slides-workflow.png']
+files=['data/research-slides.json','content/research-slides.html','research-slides.html','css/slides.css','js/slides.js','scripts/check-slides.py','scripts/render-research-slides.py','assets/slides-workflow.svg','assets/slides-workflow.png','AGENTS.md','docs/slides-workflow.md','scripts/render-slides-workflow.py','scripts/export-workflow-png.py']
 files+=['scripts/draw-slide-illustrations.py']+[str(f.relative_to(R)).replace('\\','/') for f in sorted((R/'assets').glob('*example*.svg'))]+[str(f.relative_to(R)).replace('\\','/') for f in sorted((R/'assets').glob('handoff-*.svg'))]
-report={'version':(R/'VERSION').read_text(encoding='utf-8').strip(),'tested_at_utc':datetime.now(timezone.utc).isoformat(),'browser':'Microsoft Edge','results':results,'keyboard':True,'no_js':True,'print':True,'deep_link':True,'interaction_checks':['fixed side buttons after scroll','first/last boundaries','no duplicate bottom buttons','select navigation','question reveal','all-page view','manuscript titles match','source links and output on each slide'],'page_errors':[],'hash_policy':'SHA-256: text uses LF-normalized bytes for Git/Windows portability; PNG uses original bytes','sha256':{f:hashlib.sha256((R/f).read_bytes() if f.endswith('.png') else (R/f).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for f in files}}
+report={'version':(R/'VERSION').read_text(encoding='utf-8').strip(),'tested_at_utc':datetime.now(timezone.utc).isoformat(),'browser':'Microsoft Edge','results':results,'keyboard':True,'no_js':True,'print':True,'deep_link':True,'manual_review_required':['claim support and diagram correctness','readable diagram typography','balanced whitespace and density','source and image rights'],'interaction_checks':['no internal scroll containers','PC viewport fit','unique semantic icons and complete borders','required concept diagrams','graph text fits canvas','fixed side buttons after scroll','first/last boundaries','no duplicate bottom buttons','select navigation','question reveal','all-page view','manuscript titles match','source links and output on each slide'],'page_errors':[],'hash_policy':'SHA-256: text uses LF-normalized bytes for Git/Windows portability; PNG uses original bytes','sha256':{f:hashlib.sha256((R/f).read_bytes() if f.endswith('.png') else (R/f).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for f in files}}
 (R/'.work/slides-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 if '--draft' not in sys.argv:
     public=R/'docs/validation';public.mkdir(exist_ok=True)
     (public/f'slides-v{report["version"]}.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(f'PASS: {len(results)} slide/viewport checks; equal page size and stable title position; keyboard, select, reveal, all-page view, deep link, print and no-JS fallback; no page errors.')
+print(f'PASS: {len(results)} slide/viewport checks; fixed PC page size and title; zero internal scroll containers; concept diagrams and unique icons; keyboard, select, reveal, all-page view, deep link, print and no-JS fallback; no page errors.')

@@ -101,6 +101,7 @@ body='''<main id="main" class="wrap presentation">
   <nav class="deck-controls" aria-label="簡報換頁" hidden><label>跳到 <select id="slide-select" aria-label="選擇簡報頁面"></select></label><span id="slide-status" aria-live="polite" aria-atomic="true"></span></nav>
   <p class="deck-hint">點兩側箭頭或左右方向鍵換頁 · Home／End到首尾 · 展開全文可閱讀或列印全部頁面 · <a href="assets/slides-workflow.svg">查看簡報製作流程圖</a></p>
 </main>'''
+body=body.replace('href="assets/slides-workflow.svg"', 'href="assets/slides-workflow.svg?v='+ (R/'VERSION').read_text(encoding='utf-8').strip() +'"')
 (R/'content/research-slides.html').write_text(body+'\n',encoding='utf-8')
 notes=['# 教學簡報逐頁稿','','由data/research-slides.json生成；圖解與數字為已標示來源的教學示意。','']
 for i,s in enumerate(slides,1):

@@ -1,11 +1,14 @@
 # 碳交易 Wiki
 
-目前版本：**v1.0.5**（2026-11-23）。第一個正式基準v1.0.0保留不動；版本見 `VERSION`，變更見 [CHANGELOG](CHANGELOG.md)。
+目前版本：**v1.0.6**（2026-11-23，簡報已由使用者定案）。第一個正式基準v1.0.0保留不動；版本見 `VERSION`，變更見 [CHANGELOG](CHANGELOG.md)。
 
 - [完整需求摘要](docs/requirements-summary.md)：包含歷史要求、最新決策與暫緩項目。
 - [第一版流程自檢報告](docs/slides-self-check-v1.0.0.md)：graph各階段產物、真實loop、測試與SHA-256證據。
 - [逐頁修改與v1.0.1檢查](docs/slides-self-check-v1.0.1.md)：圖示、圖解、練習題與逐頁要求的驗證。
 - [固定頁框與v1.0.2檢查](docs/slides-self-check-v1.0.2.md)：各頁尺寸、標題位置及換頁穩定性。
+- [定案版檢查](docs/slides-self-check-v1.0.6.md)：永久檢查及新graph的驗證。
+- [定案規則與graph](docs/slides-workflow.md)：各階段檢查、退回規則與版面要求。
+- [v1.0.5檢查紀錄](docs/slides-self-check-v1.0.5.md)：補充教學內容的實測紀錄。
 - [工作流程反思](docs/workflow-reflection.md)：出問題節點、檢查前移與作業三題。
 
 以 CM03 第二年 Theme 2 為重心的繁體中文研究指南，連結碳交易基礎、配對模型、多目標、研究資料、求解及實驗。白話解釋保留學術限制；計畫摘要、本站解讀與示例分開標示。

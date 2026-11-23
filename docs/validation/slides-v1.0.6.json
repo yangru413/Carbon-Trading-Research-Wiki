@@ -1,0 +1,1361 @@
+{
+  "version": "1.0.6",
+  "tested_at_utc": "2026-11-23T15:40:30.907083+00:00",
+  "browser": "Microsoft Edge",
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 1,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 2,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 3,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 4,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 5,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 6,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 7,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 8,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 9,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slide": 10,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          355,
+          355
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          720,
+          720
+        ]
+      },
+      "frame_width": 1168,
+      "frame_height": 594,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 1,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 2,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 3,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 4,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 5,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 6,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 7,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 8,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 9,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "slide": 10,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          403,
+          403
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          768,
+          768
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 642,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 1,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 2,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 3,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 4,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 5,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 6,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 7,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 8,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 9,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "slide": 10,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          535,
+          535
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          900,
+          900
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 774,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 1,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 2,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 3,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 4,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 5,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 6,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 7,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 8,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 9,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slide": 10,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          715,
+          715
+        ],
+        "source": [
+          45,
+          45
+        ],
+        "document": [
+          1080,
+          1080
+        ]
+      },
+      "frame_width": 1180,
+      "frame_height": 954,
+      "title_y": 84,
+      "question_y": 135,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 1,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          1126,
+          1126
+        ],
+        "source": [
+          58,
+          58
+        ],
+        "document": [
+          1716,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1480.3125,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 2,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          693,
+          693
+        ],
+        "source": [
+          74,
+          74
+        ],
+        "document": [
+          1299,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1063.125,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 3,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          1019,
+          1019
+        ],
+        "source": [
+          58,
+          58
+        ],
+        "document": [
+          1609,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1372.6875,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 4,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          1014,
+          1014
+        ],
+        "source": [
+          58,
+          58
+        ],
+        "document": [
+          1604,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1368.3125,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 5,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          879,
+          879
+        ],
+        "source": [
+          58,
+          58
+        ],
+        "document": [
+          1469,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1232.53125,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 6,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          1201,
+          1201
+        ],
+        "source": [
+          58,
+          58
+        ],
+        "document": [
+          1791,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1554.6875,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 7,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          1222,
+          1222
+        ],
+        "source": [
+          58,
+          58
+        ],
+        "document": [
+          1812,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1576.265625,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 8,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          851,
+          851
+        ],
+        "source": [
+          58,
+          58
+        ],
+        "document": [
+          1441,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1205.03125,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 9,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          1164,
+          1164
+        ],
+        "source": [
+          41,
+          41
+        ],
+        "document": [
+          1738,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1501.5,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "slide": 10,
+      "overflow": false,
+      "internal_scroll_containers": 0,
+      "metrics": {
+        "content": [
+          1302,
+          1302
+        ],
+        "source": [
+          74,
+          74
+        ],
+        "document": [
+          1908,
+          844
+        ]
+      },
+      "frame_width": 278,
+      "frame_height": 1672,
+      "title_y": 106,
+      "question_y": 217,
+      "window_scroll_y": 0
+    }
+  ],
+  "keyboard": true,
+  "no_js": true,
+  "print": true,
+  "deep_link": true,
+  "manual_review_required": [
+    "claim support and diagram correctness",
+    "readable diagram typography",
+    "balanced whitespace and density",
+    "source and image rights"
+  ],
+  "interaction_checks": [
+    "no internal scroll containers",
+    "PC viewport fit",
+    "unique semantic icons and complete borders",
+    "required concept diagrams",
+    "graph text fits canvas",
+    "fixed side buttons after scroll",
+    "first/last boundaries",
+    "no duplicate bottom buttons",
+    "select navigation",
+    "question reveal",
+    "all-page view",
+    "manuscript titles match",
+    "source links and output on each slide"
+  ],
+  "page_errors": [],
+  "hash_policy": "SHA-256: text uses LF-normalized bytes for Git/Windows portability; PNG uses original bytes",
+  "sha256": {
+    "data/research-slides.json": "217a34f99cfcf03375d5a23c5f946b62bb96075fc71b2cf597266e9e417b707f",
+    "content/research-slides.html": "523b3ff543840760eac663f6d16021ac43f60461aa08361b6c606eed9d33675b",
+    "research-slides.html": "a13998448e48e77e4540fb41e3e35a4492b69f6d169b67c2bb9fb1b4dea11251",
+    "css/slides.css": "7019609704a6e2a2258a943c1d0968329e19ed7d281bd8da1e8054aee3dea445",
+    "js/slides.js": "e8d3539254486b08aed9a0857f57293c74daf1366f0f550bcac34506ee58b74d",
+    "scripts/check-slides.py": "0b5503f6b0ee97a9f56725216455204c58bf7c552cabfe07b1758a906e6f935e",
+    "scripts/render-research-slides.py": "9b1ad1035c970dd97a844c478f19af1d6eb590ebea32ffe075ae5cddfaccb7e1",
+    "assets/slides-workflow.svg": "58e5a5f36ad03e8ac0b35e5d58217de3d40026bfbdaa4bce4a4dc8de88de05d9",
+    "assets/slides-workflow.png": "29b75cc58e1deb603fe7f33578de7bbd6db76a4f8f2668c017749afc072727b9",
+    "AGENTS.md": "60416dae8fadabb88ab34ec7fccef48889b7af0538caa2acfc7a6a24b9cbf069",
+    "docs/slides-workflow.md": "322999d8e88d130001dbe7a2d458db9573772bc44fb74a5c8e38984d90987a10",
+    "scripts/render-slides-workflow.py": "5096c446b38a5809f28bbde64d5f17b999e9b1dd431dbeebbdecc5c1586a885c",
+    "scripts/export-workflow-png.py": "071f8310c7f5bd677cf2fc5f9298300dc99eb0d3a220943811b02370bb5f4f7c",
+    "scripts/draw-slide-illustrations.py": "99eb9fa5e6a96af4d7b54707ac7fff72aa783a6b7c55420febe386b64195cdf5",
+    "assets/aco-tour-example-mobile.svg": "510fd77fa2351286067abc5db02f9f01e015f192e480ff86138791daa5c633ce",
+    "assets/aco-tour-example.svg": "76a1f75de0f8e04c95c4398ebd14d7dc0e99faa3624b6a3aec78227836292ca7",
+    "assets/feasibility-example-mobile.svg": "553c6813af07553a5ea616b51fa0731b54e52a69dfb9067fa47f79fc50723b70",
+    "assets/feasibility-example.svg": "b2e231a90aadc5385ab210aa1b66173faf64c16d3d0e8844a28ce892421b0f68",
+    "assets/ga-search-example-mobile.svg": "fececfac222fc5c1ff19d58480066058840343a12c61a31ccfb0b12138ae4745",
+    "assets/ga-search-example.svg": "b37996ca60a96ffe74e65db9065d96ca85d57f8cb1a06d9fb416bcf8ca60e34d",
+    "assets/matching-example-mobile.svg": "6f259dbbc44396c0abe4fbc346a20ef5c3ed14b91d01b4db715116d1de116af1",
+    "assets/matching-example.svg": "f5193e5cdcf185b3429de8f05bce29e096f2cc621920ceccb3a2994fbec14915",
+    "assets/handoff-input.svg": "fa2116dff475ce44c200c276c64ec951d42ab8321da9aaadb1692712ea0d3c40",
+    "assets/handoff-records.svg": "934f653786374793520ada2eefe34fe387b9bf48a6b649c017969a28b271ede9",
+    "assets/handoff-rules.svg": "9a0fd82d2321549f6209b13f814417fac1e1f458b5010094b2933de3dca83a92"
+  }
+}
