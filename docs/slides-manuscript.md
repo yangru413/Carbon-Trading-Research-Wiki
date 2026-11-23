@@ -97,7 +97,7 @@ Wiki：cm03.html#questions；sources.html#price
 
 流程：評估族群 → 選親代 → 交配／突變 → 評估與選存活者
 
-- 新方案不保證更好或可行；限制檢查不能省略。
+- 交配不保證後代可行；本例限制為最多選兩項。
 
 圖解：assets/ga-search-example.svg
 圖說：本站自製，沿用Wiki四位元例子；交配依Whitley（2005）投影片11，限制為本站假設。不是碳交易編碼或效能結果。
@@ -116,8 +116,8 @@ Wiki：genetic-algorithm.html；genetic-algorithm.html#example
 
 流程：合法選項 → 逐步構造 → 評估方案 → 更新資訊素
 
-- 理解上的差別：GA重組既有方案；這裡的ACO從選項逐步構造方案。
-- 原文主要示範TSP；碳交易仍須另定編碼、評分與限制處理。
+- GA重組既有方案；ACO從可行選項逐步構造方案。
+- 原文以TSP示範；碳交易須另定編碼、評分與限制處理。
 
 圖解：assets/aco-tour-example.svg
 圖說：本站自製TSP概念圖，依Dorigo等人（1996）§II–III；路線為示意，非論文原圖或實驗結果。

@@ -1,6 +1,6 @@
 # 碳交易 Wiki
 
-目前版本：**v1.0.3**（2026-11-23）。第一個正式基準v1.0.0保留不動；版本見 `VERSION`，變更見 [CHANGELOG](CHANGELOG.md)。
+目前版本：**v1.0.4**（2026-11-23）。第一個正式基準v1.0.0保留不動；版本見 `VERSION`，變更見 [CHANGELOG](CHANGELOG.md)。
 
 - [完整需求摘要](docs/requirements-summary.md)：包含歷史要求、最新決策與暫緩項目。
 - [第一版流程自檢報告](docs/slides-self-check-v1.0.0.md)：graph各階段產物、真實loop、測試與SHA-256證據。

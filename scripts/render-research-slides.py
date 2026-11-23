@@ -42,13 +42,14 @@ def node_icon(label,kind=None):
     groups=[('leaf',('永續','聲譽')),('folder',('資料','欄位','樣本','版本','第一年')),('refresh',('資訊素','更新','記憶')),('shuffle',('交配','突變')),('model',('模型','決策','限制','構造','選項')),('people',('族群','親代','配對','買方','賣方','第二年')),('chart',('評估','目標','表現','比較','利潤','成本')),('check',('可行','結論','第三年')),('search',('問題','方法','搜尋'))]
     kind=kind or next((name for name,words in groups if any(w in label for w in words)),'document')
     return '<svg class="node-icon" data-icon="'+kind+'" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">'+ICON_PATHS[kind]+'</svg>'
-def figure(d):
+def figure(d,notes=None):
     assert (R/d['src']).is_file(),d['src']
     mobile=''
     if d.get('mobile'):
         assert (R/d['mobile']).is_file()
         mobile=f'<source media="(max-width:750px)" srcset="{e(d["mobile"])}">'
-    return f'<figure class="teaching-diagram"><picture>{mobile}<img src="{e(d["src"])}" alt="{e(d["alt"])}"></picture><figcaption>{e(d["caption"])}</figcaption></figure>'
+    explanation='<div class="diagram-explanation">'+''.join(f'<p>{e(x)}</p>' for x in notes)+'</div>' if notes else ''
+    return f'<figure class="teaching-diagram"><picture>{mobile}<img src="{e(d["src"])}" alt="{e(d["alt"])}"></picture>{explanation}<figcaption>{e(d["caption"])}</figcaption></figure>'
 sections=[]
 for i,s in enumerate(slides,1):
     for key in ('title','question','output','source','links'): assert s.get(key),(i,key)
@@ -77,7 +78,8 @@ for i,s in enumerate(slides,1):
         content+=f'<div class="diagram-with-copy"><div>{points}</div>{figure(s["diagram"])}</div>'
     elif s.get('diagram_position')=='beside-overview':
         copy=content.replace(flow,'',1) if flow else content
-        content=flow+f'<div class="overview-pair"><div>{copy}{points}</div>{figure(s["diagram"])}</div>'
+        below=s.get('notes_below_diagram',False)
+        content=flow+f'<div class="overview-pair"><div>{copy}{"" if below else points}</div>{figure(s["diagram"],s.get("points") if below else None)}</div>'
     else: content+=points
     if s.get('diagram') and s.get('diagram_position') not in ('beside-points','beside-overview'):content+=figure(s['diagram'])
     if s.get('quiz'):

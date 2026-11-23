@@ -110,7 +110,8 @@ def page(filename,title,description,body,current):
     if 'academic-article' in body:
         html=html.replace('</head>','<link rel="stylesheet" href="css/article.css"></head>')
     if 'class="wrap presentation"' in body:
-        html=html.replace('</head>','<link rel="stylesheet" href="css/slides.css"><script src="js/slides.js" defer></script></head>')
+        version=(ROOT/'VERSION').read_text(encoding='utf-8').strip()
+        html=html.replace('</head>',f'<link rel="stylesheet" href="css/slides.css?v={e(version)}"><script src="js/slides.js?v={e(version)}" defer></script></head>')
         html=html.replace('更新・2026-11-16','更新・2026-11-23')
     (ROOT/filename).write_text(html,encoding='utf-8')
 
