@@ -26,6 +26,10 @@ with sync_playwright() as p:
             assert page.locator(f'#slide-{i+1} h1,#slide-{i+1} h2').inner_text()==manuscript[i]['title']
             assert page.locator(f'#slide-{i+1} .slide-source a').count()>=1
             assert page.locator(f'#slide-{i+1} .slide-output').count()==1
+            nodes=page.locator(f'#slide-{i+1} .research-flow li, #slide-{i+1} .slide-concepts > div')
+            for node in nodes.all():
+                assert node.locator('svg.node-icon').count()==1
+                assert node.evaluate('(n)=>["Top","Right","Bottom","Left"].every(x=>parseFloat(getComputedStyle(n)["border"+x+"Width"])>0)'),(width,i,'incomplete node frame')
             page.screenshot(path=str(out/f'slides-{width}-{i+1}.png'),full_page=True)
             results.append({'width':width,'slide':i+1,'overflow':False})
         page.select_option('#slide-select','0')
@@ -58,6 +62,7 @@ with sync_playwright() as p:
 files=['data/research-slides.json','content/research-slides.html','research-slides.html','css/slides.css','js/slides.js','scripts/check-slides.py','scripts/render-research-slides.py','assets/slides-workflow.svg','assets/slides-workflow.png']
 report={'version':(R/'VERSION').read_text(encoding='utf-8').strip(),'tested_at_utc':datetime.now(timezone.utc).isoformat(),'browser':'Microsoft Edge','results':results,'keyboard':True,'no_js':True,'print':True,'deep_link':True,'interaction_checks':['fixed side buttons after scroll','first/last boundaries','no duplicate bottom buttons','select navigation','question reveal','all-page view','manuscript titles match','source links and output on each slide'],'page_errors':[],'hash_policy':'SHA-256: text uses LF-normalized bytes for Git/Windows portability; PNG uses original bytes','sha256':{f:hashlib.sha256((R/f).read_bytes() if f.endswith('.png') else (R/f).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for f in files}}
 (R/'.work/slides-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-public=R/'docs/validation';public.mkdir(exist_ok=True)
-(public/f'slides-v{report["version"]}.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+if '--draft' not in sys.argv:
+    public=R/'docs/validation';public.mkdir(exist_ok=True)
+    (public/f'slides-v{report["version"]}.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('PASS: 20 slide/viewport checks; keyboard, select, reveal, all-page view, deep link, print and no-JS fallback; no page errors.')

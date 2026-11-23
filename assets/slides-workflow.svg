@@ -5,38 +5,38 @@
 <g font-family="Microsoft JhengHei, sans-serif" fill="#203b32">
 <text x="600" y="43" text-anchor="middle" font-size="30">從 Wiki 到教學投影片</text>
 <rect x="220" y="100" width="780" height="150" rx="12" fill="#fffef9" stroke="#8a9d7f" stroke-width="2"/>
-<text x="250" y="137" font-size="26">① 確認教學目標</text>
+<text x="250" y="137" font-size="26">01 確認教學目標</text>
 <text x="250" y="177" font-size="20">做：確定讀者、主題與學習成果。</text>
 <text x="250" y="212" font-size="20">查：對象與深度是否合適？</text>
 <path d="M610 250 V291" fill="none" stroke="#365744" stroke-width="3" marker-end="url(#a)"/><text x="629" y="282" font-size="17">通過</text>
 <rect x="220" y="300" width="780" height="150" rx="12" fill="#fffef9" stroke="#8a9d7f" stroke-width="2"/>
-<text x="250" y="337" font-size="26">② 查詢 Wiki 與來源</text>
+<text x="250" y="337" font-size="26">02 查詢 Wiki 與來源</text>
 <text x="250" y="377" font-size="20">做：整理可用主張、限制與圖解。</text>
 <text x="250" y="412" font-size="20">查：主張有依據？計畫／假設／結果有區分？</text>
 <path d="M610 450 V491" fill="none" stroke="#365744" stroke-width="3" marker-end="url(#a)"/><text x="629" y="482" font-size="17">通過</text>
 <rect x="220" y="500" width="780" height="170" rx="12" fill="#e5eddf" stroke="#8a9d7f" stroke-width="2"/>
-<text x="250" y="537" font-size="26">③ 整理並確認大綱</text>
+<text x="250" y="537" font-size="26">03 整理並確認大綱</text>
 <text x="250" y="577" font-size="20">做：安排10頁順序與每頁要回答的問題。</text>
 <text x="250" y="612" font-size="20">查：有無缺漏、重複？使用者是否確認？</text>
 <path d="M610 670 V711" fill="none" stroke="#365744" stroke-width="3" marker-end="url(#a)"/><text x="629" y="702" font-size="17">通過</text>
 <rect x="220" y="720" width="780" height="180" rx="12" fill="#fffef9" stroke="#8a9d7f" stroke-width="2"/>
-<text x="250" y="757" font-size="26">④ 撰寫逐頁內容</text>
+<text x="250" y="757" font-size="26">04 撰寫逐頁內容</text>
 <text x="250" y="797" font-size="20">做：寫標題、重點、圖解、來源與產出。</text>
 <text x="250" y="832" font-size="20">查：一頁一主旨？忠於 Wiki？沒有新增無據結論？</text>
 <path d="M610 900 V941" fill="none" stroke="#365744" stroke-width="3" marker-end="url(#a)"/><text x="629" y="932" font-size="17">通過</text>
 <rect x="220" y="950" width="780" height="150" rx="12" fill="#fffef9" stroke="#8a9d7f" stroke-width="2"/>
-<text x="250" y="987" font-size="26">⑤ 生成 HTML 投影片</text>
+<text x="250" y="987" font-size="26">05 生成 HTML 投影片</text>
 <text x="250" y="1027" font-size="20">做：將逐頁稿排版，加入換頁、跳頁與全文模式。</text>
 <text x="250" y="1062" font-size="20">查：圖文清楚？來源與回讀入口完整？</text>
 <path d="M610 1100 V1141" fill="none" stroke="#365744" stroke-width="3" marker-end="url(#a)"/><text x="629" y="1132" font-size="17">通過</text>
 <rect x="220" y="1150" width="780" height="190" rx="12" fill="#e5eddf" stroke="#8a9d7f" stroke-width="2"/>
-<text x="250" y="1187" font-size="26">⑥ 實際瀏覽與回歸檢查</text>
+<text x="250" y="1187" font-size="26">06 實際瀏覽與回歸檢查</text>
 <text x="250" y="1227" font-size="20">查桌機／手機：溢出、遮擋、圖片與連結。</text>
 <text x="250" y="1262" font-size="20">查操作：箭頭、鍵盤、首尾、跳頁、全文及列印。</text>
 <text x="250" y="1301" font-size="20">不通過：只改對應部分，重測原問題與相關功能。</text>
 <path d="M610 1340 V1391" fill="none" stroke="#365744" stroke-width="3" marker-end="url(#a)"/><text x="629" y="1377" font-size="17">通過</text>
 <rect x="220" y="1400" width="780" height="150" rx="12" fill="#fffef9" stroke="#8a9d7f" stroke-width="2"/>
-<text x="250" y="1437" font-size="26">⑦ 使用者試讀與交付</text>
+<text x="250" y="1437" font-size="26">07 使用者試讀與交付</text>
 <text x="250" y="1477" font-size="20">做：依意見修正，保存成果與檢查紀錄。</text>
 <text x="250" y="1512" font-size="20">查：是否看得懂、操作方便？未確認不寫已驗收。</text>
 <path d="M220 580 H105 V520 H210" fill="none" stroke="#a34e2b" stroke-width="3" marker-end="url(#r)"/><text x="18" y="475" font-size="18" fill="#a34e2b">大綱需調整</text>

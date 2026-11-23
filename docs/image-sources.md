@@ -1,5 +1,8 @@
 # 圖像來源與本批調整
 
+## 2026-11-23 追加：簡報節點圖示
+簡報內資料夾、模型、圖表、人物、搜尋、檢核等圖示由本站在 scripts/render-research-slides.py 以SVG路徑自製；無外部圖庫或字型依賴，純裝飾並設aria-hidden，不新增圖示標題或正文。既有圖說與研究依據保留。大張graph僅將圈號改01–07。
+
 ## 2026-11-23 新增：簡報製作graph
 - assets/slides-workflow.svg：本站以 scripts/render-slides-workflow.py 自製，由本次對話確認的製作與檢查規則繪製；無外部原圖或實證數據。
 - assets/slides-workflow.png：同一SVG的瀏覽器輸出，供報告使用，不是另一張來源影像。
