@@ -1,0 +1,134 @@
+{
+  "version": "1.0.0",
+  "tested_at_utc": "2026-11-23T12:47:18.888070+00:00",
+  "browser": "Microsoft Edge",
+  "results": [
+    {
+      "width": 1440,
+      "slide": 1,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 2,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 3,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 4,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 5,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 6,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 7,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 8,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 9,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 10,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 1,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 2,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 3,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 4,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 5,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 6,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 7,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 8,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 9,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 10,
+      "overflow": false
+    }
+  ],
+  "keyboard": true,
+  "no_js": true,
+  "print": true,
+  "deep_link": true,
+  "interaction_checks": [
+    "fixed side buttons after scroll",
+    "first/last boundaries",
+    "no duplicate bottom buttons",
+    "select navigation",
+    "question reveal",
+    "all-page view",
+    "manuscript titles match",
+    "source links and output on each slide"
+  ],
+  "page_errors": [],
+  "hash_policy": "SHA-256: text uses LF-normalized bytes for Git/Windows portability; PNG uses original bytes",
+  "sha256": {
+    "data/research-slides.json": "c34033c3c5907127fe26b892ee281c7db8b9eb6b848772571930dc59fee6476a",
+    "content/research-slides.html": "b567d82ee07c77b033c280376d518555bbb63b35e5f2e15577b038ad6dbf4ef8",
+    "research-slides.html": "8a06d54bd2493201926c7d0ff03043f6c6dd6e9f45646922269231950671b141",
+    "css/slides.css": "351f60dfc735d58031b0677881a5f7001f7b041a97a4c79dc49d890acf62eb16",
+    "js/slides.js": "49201adea5e1a09c16624a3fc4dee68d240a74b56c3b0e0b7719f669e4e6ba3d",
+    "scripts/check-slides.py": "ab4af83759cc0dd3a39a42bc1d9d1ea69167a49091872b46b0a4fe3949f7c5a7",
+    "scripts/render-research-slides.py": "ea1d6b5b3cd0e4ae4dc2fc8f1784ec3f70621b5ccfa41632de5c5d096cbbdb9a",
+    "assets/slides-workflow.svg": "510d37886552810737b5363f8719e081aa82fafa83fead2093e1939762d07e28",
+    "assets/slides-workflow.png": "a2195e38831189fa27c660bca528bce89ae594fb6eb39b42a5352e045b0c84fa"
+  }
+}

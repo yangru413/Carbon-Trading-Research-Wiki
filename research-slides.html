@@ -1,0 +1,78 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="從制度、資料與模型，理解GA、ACO及實驗評估的10頁教學簡報。"><meta name="theme-color" content="#203b32"><title>碳交易配對研究如何進行｜教學簡報｜碳交易 Wiki</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/learning.css"><link rel="stylesheet" href="css/wiki.css"><link rel="stylesheet" href="css/visuals.css"><script src="js/wiki.js" defer></script><link rel="stylesheet" href="css/slides.css"><script src="js/slides.js" defer></script></head><body><a class="skip" href="#main">跳至主要內容</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="碳交易 Wiki 首頁"><span class="brand-mark" aria-hidden="true">C</span><span><strong>碳交易 Wiki</strong></span></a><nav class="nav" aria-label="主要導覽"><a href="index.html" aria-current="page">研究指南</a><a href="cm03.html">CM03 計畫</a><a href="sources.html">研究資料</a></nav></div></header><main id="main" class="wrap presentation">
+  <div class="deck-toolbar"><a href="index.html">← 碳交易 Wiki</a><span>教學簡報 · 10頁</span><button type="button" id="view-all" hidden>展開全文</button></div>
+  <noscript><p>目前顯示完整簡報；啟用JavaScript可逐頁閱讀。</p></noscript>
+  <nav class="deck-side-nav" aria-label="畫面兩側換頁" hidden><button id="side-prev" class="side-prev" type="button" aria-label="上一頁" title="上一頁">‹</button><button id="side-next" class="side-next" type="button" aria-label="下一頁" title="下一頁">›</button></nav>
+  <div class="slides"><section class="slide" id="slide-1" aria-labelledby="title-1" data-manuscript-page="1">
+      <span class="slide-category">01 / 研究全貌</span><h1 id="title-1">碳交易配對研究如何進行？</h1>
+      <p class="teaching-question">研究什麼？每一步要留下什麼？</p>
+      <p class="slide-lead">在交易條件與供需限制下，尋找可比較的配對方案。</p><ol class="research-flow" aria-label="概念流程"><li>研究問題</li><li>資料</li><li>模型</li><li>搜尋方法</li><li>實驗評估</li></ol><ul class="slide-points"><li>先把問題說清楚，再選方法。</li><li>每一步都要留下可檢查的輸入、假設與產出。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>一條從問題到證據的研究路徑。</p>
+      <footer class="slide-source">本站依Wiki編排的研究導讀，非已完成實證；比較流程依Beiranvand等人（2017）。<br><a href="research-methodology.html">研究方法導讀</a></footer>
+    </section>
+<section class="slide" id="slide-2" aria-labelledby="title-2" data-manuscript-page="2">
+      <span class="slide-category">02 / 碳交易基本概念</span><h2 id="title-2">配額移轉，不等於實際減排</h2>
+      <p class="teaching-question">為什麼會出現交易需求？</p>
+      <p class="slide-lead">總量管制與交易結合排放額度限制與配額流通；額度不足可能形成購買需求。</p><div class="slide-columns"><div><ul class="slide-points"><li>移轉改變配額持有量；減排需要排放變化的證據。</li><li>交易商品、制度與適用期間要先對齊。</li></ul></div><figure><img src="assets/allowance-exchange.svg" alt="企業甲乙移轉二十單位配額，持有量改變，不代表實際減排"><figcaption>本站自製示意；甲乙與20單位為教學假設，非實際成交。</figcaption></figure></div>
+      <p class="slide-output"><strong>這一步留下：</strong>明確的商品、制度與研究期間。</p>
+      <footer class="slide-source">European Commission，About the EU ETS；United Nations（1998），Article 17。<br><a href="carbon-basics.html">制度與原圖依據</a> · <a href="eu-ets-history.html">制度期間</a></footer>
+    </section>
+<section class="slide" id="slide-3" aria-labelledby="title-3" data-manuscript-page="3">
+      <span class="slide-category">03 / 配對問題與多目標</span><h2 id="title-3">配對方案要同時比較多種目標</h2>
+      <p class="teaching-question">向誰交易、交易多少，怎樣才算更好？</p>
+      <p class="slide-lead">CM03第二年規劃四個方向，這是研究提案中的目標，尚不是實驗成果。</p><div class="slide-concepts" style="--cols:4"><div><h3>買方成本</h3><p>希望較低</p></div><div><h3>賣方利潤</h3><p>希望較高</p></div><div><h3>永續聲譽總和</h3><p>希望較高</p></div><div><h3>配對數</h3><p>希望較多</p></div></div><ul class="slide-points"><li>某方案成本較低，另一方案利潤較高，可能互不支配；不一定只有一個最好答案。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>決策內容、目標方向與限制的定義。</p>
+      <footer class="slide-source">CM03，Theme 2、§3.2.1；取捨依Wiki的Pareto示意，非效能結果。<br><a href="cm03.html#objectives">四目標與原文定位</a> · <a href="pareto.html">Pareto示例</a></footer>
+    </section>
+<section class="slide" id="slide-4" aria-labelledby="title-4" data-manuscript-page="4">
+      <span class="slide-category">04 / 資料與清理</span><h2 id="title-4">先整理資料，再說它能支持什麼</h2>
+      <p class="teaching-question">哪些欄位可用，哪些資訊仍然缺少？</p>
+      <ol class="research-flow" aria-label="概念流程"><li>保留原始版本</li><li>對照欄位與單位</li><li>檢查ID與粒度</li><li>建立研究樣本</li></ol><div class="slide-concepts" style="--cols:2"><div><h3>可能已有</h3><p>帳戶、日期、交易ID、單位種類、數量。</p></div><div><h3>不能直接假定</h3><p>成交價、當時供需、資格、聲譽與偏好。</p></div></div><ul class="slide-points"><li>同一交易ID可能有多列區塊，不能直接當成重複資料刪除。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>可追溯的樣本、欄位對照與清理規則。</p>
+      <footer class="slide-source">Abrell（2024），§1、附錄A.3–A.4；流程為本站整理，不代表本機全檔已完成清洗。<br><a href="sources.html">資料與欄位限制</a> · <a href="reading-eutl-database.html">資料庫方法</a></footer>
+    </section>
+<section class="slide" id="slide-5" aria-labelledby="title-5" data-manuscript-page="5">
+      <span class="slide-category">05 / 模型與假設</span><h2 id="title-5">模型連起資料、決策與限制</h2>
+      <p class="teaching-question">如何把資料變成可以求解的問題？</p>
+      <ol class="research-flow" aria-label="概念流程"><li>輸入資料</li><li>配對／交易量</li><li>資格與供需限制</li><li>計算各目標</li></ol><ul class="slide-points"><li>同名符號不代表相同意義：是否配對與交易數量要區分。</li><li>輸入標示觀測、代理或模擬；缺資料不能直接解讀為沒有限制。</li></ul><details class="slide-check"><summary>上午做配對，能直接把當天收盤價當已知資訊嗎？</summary><p>若模擬當時決策，收盤價尚不可觀察；需改用當時可取得的資訊，或另交代研究假設。</p></details>
+      <p class="slide-output"><strong>這一步留下：</strong>明列變數、目標、限制與假設的模型版本。</p>
+      <footer class="slide-source">本站依CM03模型疑義與Wiki價格頁整理；流程是教學框架，非已核定模型。<br><a href="cm03.html#questions">模型待確認事項</a> · <a href="sources.html#price">價格與可觀察時間</a></footer>
+    </section>
+<section class="slide" id="slide-6" aria-labelledby="title-6" data-manuscript-page="6">
+      <span class="slide-category">06 / 基因演算法</span><h2 id="title-6">GA：重組一群候選方案</h2>
+      <p class="teaching-question">新方案如何產生，又怎麼留下？</p>
+      <p class="slide-lead">基因演算法（Genetic Algorithm, GA）對一群編碼方案進行評估、選擇、交配與突變。</p><ol class="research-flow" aria-label="概念流程"><li>評估族群</li><li>選親代</li><li>交配／突變</li><li>評估與選存活者</li></ol><p class="loop-caption">↺ 未達停止條件 → 以新族群繼續。</p><ul class="slide-points"><li>新方案不保證更好或可行；限制檢查不能省略。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>候選方案與目標值；不能宣稱保證最佳。</p>
+      <footer class="slide-source">Eiben與Schoenauer（2002），§2、§4–5；流程為Wiki自製概念整理，不是EMOBET完整實作。<br><a href="genetic-algorithm.html">GA機制與微應用</a></footer>
+    </section>
+<section class="slide" id="slide-7" aria-labelledby="title-7" data-manuscript-page="7">
+      <span class="slide-category">07 / 蟻群最佳化</span><h2 id="title-7">ACO：逐步構造候選方案</h2>
+      <p class="teaching-question">搜尋記憶如何影響下一次選擇？</p>
+      <p class="slide-lead">蟻群最佳化（Ant Colony Optimization, ACO）的早期Ant System，用資訊素與啟發式資訊引導機率選擇。</p><ol class="research-flow" aria-label="概念流程"><li>合法選項</li><li>逐步構造</li><li>評估方案</li><li>更新資訊素</li></ol><p class="loop-caption">↺ 未達停止條件 → 再構造一批方案。</p><ul class="slide-points"><li>理解上的差別：GA重組既有方案；這裡的ACO從選項逐步構造方案。</li><li>原文主要示範TSP；碳交易仍須另定編碼、評分與限制處理。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>搜尋到的方案與評估值，不是已驗證碳交易成效。</p>
+      <footer class="slide-source">Dorigo等人（1996），§II–III；GA／ACO對照是本站教學整理，不是效能比較。<br><a href="ant-colony-optimization.html">ACO入門</a> · <a href="reading-ant-system.html">原始論文與限制</a> · <a href="genetic-algorithm.html">GA對照</a></footer>
+    </section>
+<section class="slide" id="slide-8" aria-labelledby="title-8" data-manuscript-page="8">
+      <span class="slide-category">08 / 實驗與評估</span><h2 id="title-8">公平比較之前，先檢查可行性</h2>
+      <p class="teaching-question">怎麼知道方法有用，而不是只是跑出答案？</p>
+      <div class="slide-concepts" style="--cols:3"><div><h3>先驗可行性</h3><p>交易資格、供需與數量是否滿足？</p></div><div><h3>再比表現</h3><p>共用測試情境，明列參數、計算預算、停止及重複設定。</p></div><div><h3>限制結論</h3><p>小樣本流程成功，不代表市場整體或方法普遍較好。</p></div></div><ul class="slide-points"><li>多目標指標與參考集合還需另定；目前Wiki沒有GA／ACO碳交易效能結果。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>可重現設定、比較結果與結論適用範圍。</p>
+      <footer class="slide-source">Beiranvand等人（2017），§1.2–§3，主要範圍為單目標；多目標計畫安排見CM03 §3.2.3。<br><a href="research-methodology.html">比較與評估路徑</a> · <a href="reading-benchmarking.html">方法論文</a> · <a href="cm03.html#methods">計畫評估安排</a></footer>
+    </section>
+<section class="slide" id="slide-9" aria-labelledby="title-9" data-manuscript-page="9">
+      <span class="slide-category">09 / 跨年度銜接</span><h2 id="title-9">留下能讓下一屆重做的研究</h2>
+      <p class="teaching-question">需要承接什麼，又要交付什麼？</p>
+      <div class="slide-concepts" style="--cols:3"><div><h3>第一年 → 輸入</h3><p>索取指標定義、企業對照、版本與可用時間。</p></div><div><h3>第二年 → 配對</h3><p>保存模型、清理規則、候選解與評估紀錄。</p></div><div><h3>第三年 → 後續研究</h3><p>提供可追溯結果、假設與限制，供規則研究參考。</p></div></div><ul class="slide-points"><li>以上是本站交接建議。第一年成果未取得，不把預期輸入寫成已交付成果。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>有版本、定義與限制的交接材料。</p>
+      <footer class="slide-source">CM03 Theme 1–3；具體交接項目是本站建議，並非已完成交付。<br><a href="start.html">年度關係</a> · <a href="research-methodology.html">交接建議</a></footer>
+    </section>
+<section class="slide" id="slide-10" aria-labelledby="title-10" data-manuscript-page="10">
+      <span class="slide-category">10 / 研究流程回顧</span><h2 id="title-10">研究不是直線：失敗就回到原因</h2>
+      <p class="teaching-question">在哪裡退回？回去要改什麼？</p>
+      <ol class="research-flow" aria-label="概念流程"><li>問題</li><li>資料</li><li>模型</li><li>方法</li><li>實驗</li></ol><div class="slide-concepts" style="--cols:3"><div><h3>資料不足</h3><p>回到來源與資料：補讀、補欄位或改樣本。</p></div><div><h3>方案不可行</h3><p>回到模型與方法：核對限制、編碼及處理方式。</p></div><div><h3>比較不公平</h3><p>回到實驗設定：對齊測試情境、預算與指標。</p></div></div><ul class="slide-points"><li>修改後，重查原問題與受影響項目；保存改了什麼、為何改。</li></ul>
+      <p class="slide-output"><strong>這一步留下：</strong>可解釋的修正紀錄，而不只是最後一組答案。</p>
+      <footer class="slide-source">本站依Wiki研究導讀整理的研究建議；不是宣稱已執行碳交易實驗。這與簡報製作graph是兩個不同流程。<br><a href="research-methodology.html">重讀研究導讀</a> · <a href="literature.html">文獻與完整出處</a></footer>
+    </section></div>
+  <nav class="deck-controls" aria-label="簡報換頁" hidden><label>跳到 <select id="slide-select" aria-label="選擇簡報頁面"></select></label><span id="slide-status" aria-live="polite" aria-atomic="true"></span></nav>
+  <p class="deck-hint">點兩側箭頭或左右方向鍵換頁 · Home／End到首尾 · 展開全文可閱讀或列印全部頁面 · <a href="assets/slides-workflow.svg">查看簡報製作流程圖</a></p>
+</main>
+<footer class="site-footer"><div class="wrap footer-inner"><p>碳交易 Wiki</p><p>更新・2026-11-23</p><a href="sources.html#scope">整理範圍與限制</a></div></footer></body></html>

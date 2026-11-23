@@ -1,34 +1,225 @@
 [
-  {"id":"overview","order":"起點","title":"研究脈絡與問題","href":"start.html","summary":"CM03 三年計畫的關係、第二年研究問題，以及模型、資料與方法之間的連結。","needs":"相關文件：CM03 主題概述與第二年研究內容。","extensions":[
-    {"title":"研究問題、方法與預期成果","summary":"辨認計畫中的問題設定、方法提案與成果主張。","status":"planned"},
-    {"title":"三年主題與研究依賴","summary":"永續預測、交易配對與規則萃取之間的關係。","status":"planned"},
-    {"title":"研究假設與問題紀錄","summary":"將原文歧義、缺少資料與待確認設定分開記錄。","status":"planned"}]},
-  {"id":"basics","order":"01","title":"碳交易基礎","href":"carbon-basics.html","summary":"排放量、配額、買賣與履約，以及 EU ETS、EUA 和 EUTL 的區別。","needs":"相關資料：官方制度說明與 CM03 的交易對象定義。","extensions":[
-    {"title":"配額、減量信用與綠能憑證","summary":"不同單位的核發方式、用途與適用範圍。","status":"planned"},
-    {"title":"履約與配額登記","summary":"排放申報、繳交配額與帳戶移轉的關係。","status":"planned"},
-    {"title":"EU ETS 制度與研究期間","summary":"制度階段改變時，研究假設與資料範圍如何對齊。","status":"planned"},
-    {"title":"碳交易法規與適用範圍","summary":"整理法規原文入口、生效期間與研究對象，區分制度條文與本站解讀。","status":"planned"}]},
-  {"id":"matching","order":"02","title":"交易配對模型","href":null,"summary":"交易對象、交易數量、供給與需求，以及模型不可違反的限制。","needs":"相關資料：供需、資格、交易條件與 CM03 §3.2.1。","extensions":[
-    {"title":"索引、變數與限制式","summary":"以買賣清單理解模型的符號與加總。","status":"planned"},
-    {"title":"指派模型與運輸模型","summary":"一對一配對與可分割交易量的假設差異。","status":"planned"},
-    {"title":"可行性與供需平衡","summary":"總量、交易上限與未滿足需求的處理。","status":"planned"}]},
-  {"id":"multiobjective","order":"03","title":"多目標最佳化","href":null,"summary":"成本、利潤、永續聲譽與配對數之間的取捨，以及候選方案的比較方式。","needs":"相關文件：四個目標的原始定義與量綱。","extensions":[
-    {"title":"Pareto 支配與方案比較","href":"pareto.html","summary":"以兩個目標的示意方案理解支配與互不支配。","status":"ready","parent":"cm03.html#pareto"},
-    {"title":"目標尺度與標準化","summary":"不同單位和數量級對比較的影響。","status":"planned"},
-    {"title":"目標權重、屬性權重與參考向量","summary":"同樣稱為權重，所代表的用途可能不同。","status":"planned"}]},
-  {"id":"datasets","order":"04","title":"研究資料","href":"sources.html","summary":"EUTL 與研究資料庫、交易 log、欄位、價格口徑及資料品質限制。","needs":"相關資料：資料說明、CSV 表頭、價格與聲譽來源。","extensions":[
-    {"title":"交易 log 欄位與紀錄粒度","href":"transaction-log.html","summary":"ID、日期、單位種類與數量；列數與交易筆數的差別。","status":"ready","parent":"sources.html#limits"},
-    {"title":"資料品質、價格與時間對齊","summary":"合併編碼、缺值、重複檢查與版本記錄，並區分現貨、期貨、代理價格及前視偏誤。","status":"planned"}]},
-  {"id":"methods","order":"05","title":"求解方法與演算法","href":null,"summary":"由輸入、搜尋與選擇過程理解 EMOBET，再連結計畫列出的比較方法。","needs":"相關文件：CM03 §3.2.2 與演算法原始文獻。","extensions":[
-    {"title":"EMOBET 的概念流程","href":"emobet.html","summary":"初始化、交配與突變、參考向量更新及環境選擇。","status":"ready","parent":"cm03.html#methods"},
-    {"title":"Hungarian 與基礎配對問題","summary":"指派方法的用途與適用條件。","status":"planned"},
-    {"title":"多目標演算法比較","summary":"NSGA-III、RVEA／原文 REVA、ARMOEA 的文獻與機制。","status":"planned"},
-    {"title":"基因演算法：表示、選擇與變異","href":"genetic-algorithm.html","summary":"基本流程、可重算的示意例子與 CM03 的研究連結。","status":"ready","parent":"index.html#topic-methods"}]},
-  {"id":"evaluation","order":"06","title":"實驗設計與評估","href":null,"summary":"比較方法、評估指標、參數分析與消融實驗，以及研究結果能支持的結論。","needs":"相關文件：CM03 §3.2.3 與可重現的實驗設定。","extensions":[
-    {"title":"評估指標與公平比較","summary":"整合 IGD、參考解集合、配對率分母、運算時間與硬體條件。","status":"planned"},
-    {"title":"實驗設定、參數與消融","summary":"合併可重現設定、參數敏感度與演算法組件貢獻的檢查。","status":"planned"}]},
-  {"id":"plan","order":"計畫","title":"CM03 計畫解讀","href":"cm03.html","summary":"逐段對照研究計畫，區分原文摘要、研究解讀與教學示例。","needs":"原始依據：CM03-f.docx；標註章節與段落起句。","extensions":[
-    {"title":"Pareto 支配與方案比較","href":"pareto.html","summary":"對照計畫中的 Pareto 定義與示意方案。","status":"ready","parent":"cm03.html#pareto"},
-    {"title":"EMOBET 的概念流程","href":"emobet.html","summary":"對照 §3.2.2 的流程描述。","status":"ready","parent":"cm03.html#methods"},
-    {"title":"公式、符號與模型待釐清事項","summary":"記錄決策變數、商品範圍與編碼描述的不一致。","status":"planned"}]}
+  {
+    "id": "overview",
+    "order": "起點",
+    "title": "研究脈絡與問題",
+    "href": "start.html",
+    "summary": "CM03 三年計畫的關係、第二年研究問題，以及模型、資料與方法之間的連結。",
+    "needs": "相關文件：CM03 主題概述與第二年研究內容。",
+    "extensions": [
+      {
+        "title": "研究如何進行：問題、資料與實驗",
+        "summary": "辨認計畫中的問題設定、方法提案與成果主張。",
+        "status": "ready",
+        "href": "research-methodology.html",
+        "parent": "start.html"
+      },
+      {
+        "title": "三年主題與研究依賴",
+        "summary": "永續預測、交易配對與規則萃取之間的關係。",
+        "status": "planned"
+      },
+      {
+        "title": "研究假設與問題紀錄",
+        "summary": "將原文歧義、缺少資料與待確認設定分開記錄。",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "basics",
+    "order": "01",
+    "title": "碳交易基礎",
+    "href": "carbon-basics.html",
+    "summary": "排放量、配額、買賣與履約，以及 EU ETS、EUA 和 EUTL 的區別。",
+    "needs": "相關資料：官方制度說明與 CM03 的交易對象定義。",
+    "extensions": [
+      {
+        "title": "配額、減量信用與綠能憑證",
+        "summary": "不同單位的核發方式、用途與適用範圍。",
+        "status": "planned"
+      },
+      {
+        "title": "履約與配額登記",
+        "summary": "排放申報、繳交配額與帳戶移轉的關係。",
+        "status": "planned"
+      },
+      {
+        "title": "EU ETS 制度與研究期間",
+        "summary": "制度階段改變時，研究假設與資料範圍如何對齊。",
+        "status": "ready",
+        "href": "eu-ets-history.html",
+        "parent": "carbon-basics.html"
+      },
+      {
+        "title": "碳交易法規與適用範圍",
+        "summary": "整理法規原文入口、生效期間與研究對象，區分制度條文與本站解讀。",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "matching",
+    "order": "02",
+    "title": "交易配對模型",
+    "href": null,
+    "summary": "交易對象、交易數量、供給與需求，以及模型不可違反的限制。",
+    "needs": "相關資料：供需、資格、交易條件與 CM03 §3.2.1。",
+    "extensions": [
+      {
+        "title": "索引、變數與限制式",
+        "summary": "以買賣清單理解模型的符號與加總。",
+        "status": "planned"
+      },
+      {
+        "title": "指派模型與運輸模型",
+        "summary": "一對一配對與可分割交易量的假設差異。",
+        "status": "planned"
+      },
+      {
+        "title": "可行性與供需平衡",
+        "summary": "總量、交易上限與未滿足需求的處理。",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "multiobjective",
+    "order": "03",
+    "title": "多目標最佳化",
+    "href": null,
+    "summary": "成本、利潤、永續聲譽與配對數之間的取捨，以及候選方案的比較方式。",
+    "needs": "相關文件：四個目標的原始定義與量綱。",
+    "extensions": [
+      {
+        "title": "Pareto 支配與方案比較",
+        "href": "pareto.html",
+        "summary": "以兩個目標的示意方案理解支配與互不支配。",
+        "status": "ready",
+        "parent": "cm03.html#pareto"
+      },
+      {
+        "title": "目標尺度與標準化",
+        "summary": "不同單位和數量級對比較的影響。",
+        "status": "planned"
+      },
+      {
+        "title": "目標權重、屬性權重與參考向量",
+        "summary": "同樣稱為權重，所代表的用途可能不同。",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "datasets",
+    "order": "04",
+    "title": "研究資料",
+    "href": "sources.html",
+    "summary": "EUTL 與研究資料庫、交易 log、欄位、價格口徑及資料品質限制。",
+    "needs": "相關資料：資料說明、CSV 表頭、價格與聲譽來源。",
+    "extensions": [
+      {
+        "title": "交易 log 欄位與紀錄粒度",
+        "href": "transaction-log.html",
+        "summary": "ID、日期、單位種類與數量；列數與交易筆數的差別。",
+        "status": "ready",
+        "parent": "sources.html#limits"
+      },
+      {
+        "title": "資料品質、價格與時間對齊",
+        "summary": "合併編碼、缺值、重複檢查與版本記錄，並區分現貨、期貨、代理價格及前視偏誤。",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "methods",
+    "order": "05",
+    "title": "求解方法與演算法",
+    "href": null,
+    "summary": "由輸入、搜尋與選擇過程理解 EMOBET，再連結計畫列出的比較方法。",
+    "needs": "相關文件：CM03 §3.2.2 與演算法原始文獻。",
+    "extensions": [
+      {
+        "title": "EMOBET 的概念流程",
+        "href": "emobet.html",
+        "summary": "初始化、交配與突變、參考向量更新及環境選擇。",
+        "status": "ready",
+        "parent": "cm03.html#methods"
+      },
+      {
+        "title": "Hungarian 與基礎配對問題",
+        "summary": "指派方法的用途與適用條件。",
+        "status": "planned"
+      },
+      {
+        "title": "多目標演算法比較",
+        "summary": "NSGA-III、RVEA／原文 REVA、ARMOEA 的文獻與機制。",
+        "status": "planned"
+      },
+      {
+        "title": "基因演算法：表示、選擇與變異",
+        "href": "genetic-algorithm.html",
+        "summary": "基本流程、可重算的示意例子與 CM03 的研究連結。",
+        "status": "ready",
+        "parent": "index.html#topic-methods"
+      },
+      {
+        "title": "蟻群最佳化：合作搜尋與配對示意",
+        "summary": "原始Ant System概念、步驟與研究應用限制。",
+        "href": "ant-colony-optimization.html",
+        "status": "ready",
+        "parent": "index.html#topic-methods"
+      }
+    ]
+  },
+  {
+    "id": "evaluation",
+    "order": "06",
+    "title": "實驗設計與評估",
+    "href": null,
+    "summary": "比較方法、評估指標、參數分析與消融實驗，以及研究結果能支持的結論。",
+    "needs": "相關文件：CM03 §3.2.3 與可重現的實驗設定。",
+    "extensions": [
+      {
+        "title": "評估指標與公平比較",
+        "summary": "整合 IGD、參考解集合、配對率分母、運算時間與硬體條件。",
+        "status": "planned"
+      },
+      {
+        "title": "實驗設定、參數與消融",
+        "summary": "合併可重現設定、參數敏感度與演算法組件貢獻的檢查。",
+        "status": "planned"
+      }
+    ]
+  },
+  {
+    "id": "plan",
+    "order": "計畫",
+    "title": "CM03 計畫解讀",
+    "href": "cm03.html",
+    "summary": "逐段對照研究計畫，區分原文摘要、研究解讀與教學示例。",
+    "needs": "原始依據：CM03-f.docx；標註章節與段落起句。",
+    "extensions": [
+      {
+        "title": "Pareto 支配與方案比較",
+        "href": "pareto.html",
+        "summary": "對照計畫中的 Pareto 定義與示意方案。",
+        "status": "ready",
+        "parent": "cm03.html#pareto"
+      },
+      {
+        "title": "EMOBET 的概念流程",
+        "href": "emobet.html",
+        "summary": "對照 §3.2.2 的流程描述。",
+        "status": "ready",
+        "parent": "cm03.html#methods"
+      },
+      {
+        "title": "公式、符號與模型待釐清事項",
+        "summary": "記錄決策變數、商品範圍與編碼描述的不一致。",
+        "status": "planned"
+      }
+    ]
+  }
 ]

@@ -1,7 +1,92 @@
 [
-  {"slug":"start","title":"研究脈絡與問題","description":"CM03 三年關係、第二年研究目標與資料需求。","nav":"home"},
-  {"slug":"carbon-basics","title":"碳交易基礎","description":"排放量、配額、履約，以及制度、交易單位與紀錄。","nav":"home"},
-  {"slug":"cm03","title":"CM03 計畫解讀","description":"逐段對照計畫章節與原文起句，區分摘要、解讀與示例。","nav":"cm03"},
-  {"slug":"sources","title":"研究資料","description":"EUTL、資料庫、交易 log 欄位與使用限制。","nav":"sources"},
-  {"slug":"genetic-algorithm","title":"基因演算法：表示、選擇與變異","description":"GA 的基本機制、示意例子及其與 CM03 的關係。","nav":"home"}
+  {
+    "slug": "start",
+    "title": "研究脈絡與問題",
+    "description": "CM03 三年關係、第二年研究目標與資料需求。",
+    "nav": "home"
+  },
+  {
+    "slug": "carbon-basics",
+    "title": "碳交易基礎",
+    "description": "排放量、配額、履約，以及制度、交易單位與紀錄。",
+    "nav": "home"
+  },
+  {
+    "slug": "cm03",
+    "title": "CM03 計畫解讀",
+    "description": "逐段對照計畫章節與原文起句，區分摘要、解讀與示例。",
+    "nav": "cm03"
+  },
+  {
+    "slug": "sources",
+    "title": "研究資料",
+    "description": "EUTL、資料庫、交易 log 欄位與使用限制。",
+    "nav": "sources"
+  },
+  {
+    "slug": "genetic-algorithm",
+    "title": "基因演算法：表示、選擇與變異",
+    "description": "GA 的基本機制、示意例子及其與 CM03 的關係。",
+    "nav": "home"
+  },
+  {
+    "slug": "reading-benchmarking",
+    "title": "最佳化演算法如何公平比較？",
+    "description": "演算法的比較如何避免受到測試選擇與實驗設計誤導？",
+    "nav": "home"
+  },
+  {
+    "slug": "reading-kyoto-protocol",
+    "title": "京都議定書：減量承諾與交易原則",
+    "description": "締約方如何承擔減量義務，以及交易在履行義務中扮演何種角色？",
+    "nav": "home"
+  },
+  {
+    "slug": "reading-eu-ets-history",
+    "title": "EU ETS：制度階段如何影響研究",
+    "description": "不同年份的制度背景為何不能混用？",
+    "nav": "home"
+  },
+  {
+    "slug": "reading-eutl-database",
+    "title": "EUTL資料如何整理成研究資料庫？",
+    "description": "公開EUTL資訊分散，帳戶、設施與移轉難以串接。",
+    "nav": "home"
+  },
+  {
+    "slug": "reading-ant-system",
+    "title": "Ant System：人工螞蟻如何合作搜尋？",
+    "description": "如何以合作的簡單代理搜尋組合最佳化方案？",
+    "nav": "home"
+  },
+  {
+    "slug": "research-methodology",
+    "title": "碳交易配對研究如何進行",
+    "description": "研究問題、資料、模型、方法與評估的連接。",
+    "nav": "home"
+  },
+  {
+    "slug": "eu-ets-history",
+    "title": "EU ETS：制度階段與研究期間",
+    "description": "理解2020資料所處制度階段與法律查核限制。",
+    "nav": "home"
+  },
+  {
+    "slug": "ant-colony-optimization",
+    "title": "蟻群最佳化：合作搜尋與配對示意",
+    "description": "ACO入門、原始方法與配對應用界線。",
+    "nav": "home"
+  },
+  {
+    "slug": "literature",
+    "title": "文獻摘要與來源索引",
+    "description": "按題目查閱研究問題、方法、用途與限制。",
+    "nav": "home"
+  },
+  {
+    "slug": "research-slides",
+    "title": "碳交易配對研究如何進行｜教學簡報",
+    "description": "從制度、資料與模型，理解GA、ACO及實驗評估的10頁教學簡報。",
+    "nav": "home"
+  }
 ]

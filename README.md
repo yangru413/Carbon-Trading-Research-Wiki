@@ -1,8 +1,18 @@
 # 碳交易 Wiki
 
+第一個正式版本：**v1.0.0**（2026-11-23）。版本見 `VERSION`，變更見 [CHANGELOG](CHANGELOG.md)；舊Git提交保留，`v1.0.0`標籤作為目前全部成果的版本基準。
+
+- [完整需求摘要](docs/requirements-summary.md)：包含歷史要求、最新決策與暫緩項目。
+- [最新版簡報自檢報告](docs/slides-self-check-v1.0.0.md)：graph各階段產物、真實loop、測試與SHA-256證據。
+- [工作流程反思](docs/workflow-reflection.md)：出問題節點、檢查前移與作業三題。
+
 以 CM03 第二年 Theme 2 為重心的繁體中文研究指南，連結碳交易基礎、配對模型、多目標、研究資料、求解及實驗。白話解釋保留學術限制；計畫摘要、本站解讀與示例分開標示。
 
 ## 1. 使用與文件分工
+
+2026-11-23 首批 LLM Wiki 整合已加入「研究導讀＋主題查閱」雙入口與文獻摘要索引。實際來源、閱讀範圍、更新與驗證見 [維護紀錄](docs/wiki-log.md)；第一批五份來源已整合，不代表各主題3–5篇文獻或整份作業完成。`scripts/ingest-batch-one.py` 為一次性已執行遷移，請勿重跑，日常仍用下方建置流程。
+
+教學簡報重製版依 [大綱](docs/slides-outline.md) → [逐頁稿](docs/slides-manuscript.md) → HTML製作。逐頁內容來源為 `data/research-slides.json`，建置時 `scripts/render-research-slides.py` 產生 `content/research-slides.html`，請改JSON而非直接改該片段。製作流程圖在 `assets/slides-workflow.svg`／`.png`；PNG可供使用者放入Word報告。
 
 直接開啟 `index.html`，或在 VS Code 右鍵選 **Open with Live Server**。主題標題進章節，卡片內文展開／收合延伸子卡片；後續卡片推移並換行。未完成內容不設假連結，停用 JavaScript 時延伸全部顯示。
 

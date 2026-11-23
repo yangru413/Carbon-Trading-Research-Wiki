@@ -97,6 +97,9 @@ def process(body):
         for key in match.group(1).split(','):
             source=LITERATURE[key]
             doi=f' DOI：<a href="https://doi.org/{e(source["doi"])}">{e(source["doi"])}</a>。' if source.get('doi') else ''
+            if source.get('apa'):
+                items.append(f'<li id="ref-{e(key)}">{e(source["apa"])}<br><a href="{e(source["url"])}">原始來源／版本入口</a><br><small>實際查閱：{e(source["read_scope"])}<br>用途：{e(source["supports"])}<br>查詢：{e(source["accessed"])}</small></li>')
+                continue
             items.append(f'<li id="ref-{e(key)}"><strong>{e(source["authors"])}（{e(source["year"])}）</strong>。<cite>{e(source["title"])}</cite>。{e(source["publication"])}。{doi}<br><a href="{e(source["url"])}">原始來源／作者公開版本</a><br><small>實際查閱：{e(source["read_scope"])}<br>用途：{e(source["supports"])}<br>查詢：{e(source["accessed"])}</small></li>')
         return '<ol class="bibliography">'+''.join(items)+'</ol>'
     body=re.sub(r'\[\[bibliography:([a-z0-9,\-]+)\]\]',bibliography,body)
@@ -106,8 +109,14 @@ def page(filename,title,description,body,current):
     html=f'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="{e(description)}"><meta name="theme-color" content="#203b32"><title>{e(title)}｜碳交易 Wiki</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/learning.css"><link rel="stylesheet" href="css/wiki.css"><link rel="stylesheet" href="css/visuals.css"><script src="js/wiki.js" defer></script></head><body>{header(current)}{process(body)}{footer()}</body></html>'
     if 'academic-article' in body:
         html=html.replace('</head>','<link rel="stylesheet" href="css/article.css"></head>')
+    if 'class="wrap presentation"' in body:
+        html=html.replace('</head>','<link rel="stylesheet" href="css/slides.css"><script src="js/slides.js" defer></script></head>')
+        html=html.replace('更新・2026-11-16','更新・2026-11-23')
     (ROOT/filename).write_text(html,encoding='utf-8')
 
+if (ROOT/'data/research-slides.json').exists():
+    import runpy
+    runpy.run_path(str(ROOT/'scripts/render-research-slides.py'),run_name='__main__')
 home=(ROOT/'content/index.html').read_text(encoding='utf-8').replace('[[topic-cards]]',topic_cards())
 page('index.html','碳交易 Wiki','研究主題卡片、閱讀順序與可展開的延伸閱讀。',home,'home')
 
