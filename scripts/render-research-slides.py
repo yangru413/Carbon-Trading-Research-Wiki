@@ -71,16 +71,18 @@ for i,s in enumerate(slides,1):
     if s.get('image'):
         assert (R/s['image']).is_file()
         content+=f'<div class="slide-columns"><div>{points}</div><figure><img src="{e(s["image"])}" alt="{e(s["alt"])}"><figcaption>{e(s["caption"])}</figcaption></figure></div>'
+    elif s.get('diagram_position')=='beside-points':
+        content+=f'<div class="diagram-with-copy"><div>{points}</div>{figure(s["diagram"])}</div>'
     else: content+=points
-    if s.get('diagram'):content+=figure(s['diagram'])
+    if s.get('diagram') and s.get('diagram_position')!='beside-points':content+=figure(s['diagram'])
     if s.get('quiz'):
         content+=f'<details class="slide-check"><summary><span class="quiz-label">想一想</span><span class="quiz-question">{e(s["quiz"]["question"])}</span><span class="quiz-action"><span class="quiz-show">點我看答案 ＋</span><span class="quiz-hide">收起答案 −</span></span></summary><div class="quiz-answer"><strong>參考答案</strong><p>{e(s["quiz"]["answer"])}</p></div></details>'
     tag='h1' if i==1 else 'h2'
     links=' · '.join(f'<a href="{e(x["href"])}">{e(x["label"])}</a>' for x in s['links'])
     sections.append(f'''<section class="slide {e(s.get('class',''))}" id="slide-{i}" aria-labelledby="title-{i}" data-manuscript-page="{i}">
-      <span class="slide-category">{i:02d} / {e(s['topic'])}</span><{tag} id="title-{i}">{e(s['title'])}</{tag}>
-      <p class="teaching-question">{e(s['question'])}</p>
-      {content}
+      <header class="slide-heading"><span class="slide-category">{i:02d} / {e(s['topic'])}</span><{tag} id="title-{i}">{e(s['title'])}</{tag}>
+      <p class="teaching-question">{e(s['question'])}</p></header>
+      <div class="slide-content" role="region" aria-label="{e(s['topic'])}內容" tabindex="0">{content}</div>
       <p class="slide-output"><strong>{e(s['output_label'])}：</strong>{e(s['output'])}</p>
       <footer class="slide-source">{e(s['source'])}<br>{links}</footer>
     </section>''')

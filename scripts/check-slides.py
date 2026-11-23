@@ -11,12 +11,13 @@ manuscript=json.loads((R/'data/research-slides.json').read_text(encoding='utf-8'
 assert len(manuscript)==10
 with sync_playwright() as p:
     b=p.chromium.launch(channel='msedge',headless=True)
-    for width,height in [(1440,1000),(390,844)]:
+    for width,height in [(1440,1000),(1280,720),(390,844)]:
         context=b.new_context(viewport={'width':width,'height':height},reduced_motion='reduce')
         page=context.new_page();errors=[]
         page.on('pageerror',lambda error:errors.append(str(error)))
         page.goto((R/'research-slides.html').as_uri())
         assert page.locator('#slide-prev,#slide-next').count()==0
+        baseline=None
         for i in range(10):
             page.select_option('#slide-select',str(i))
             assert page.locator('.slide:visible').count()==1
@@ -30,11 +31,18 @@ with sync_playwright() as p:
             kinds=nodes.locator('svg.node-icon').evaluate_all('(xs)=>xs.map(x=>x.dataset.icon)')
             assert len(kinds)==len(set(kinds)),(i,'duplicate icons on page')
             assert page.locator(f'#slide-{i+1} .slide-output strong').inner_text() in ('懶人包：','產出成果：')
+            geometry=page.locator(f'#slide-{i+1}').evaluate('''(s)=>{let b=s.getBoundingClientRect(),t=s.querySelector('h1,h2').getBoundingClientRect(),q=s.querySelector('.teaching-question').getBoundingClientRect();return [b.width,b.height,b.y,t.y,q.y,scrollY]}''')
+            if baseline is None:baseline=geometry
+            assert all(abs(a-b)<1 for a,b in zip(geometry,baseline)),(width,i,'layout shifted',geometry,baseline)
+            content=page.locator(f'#slide-{i+1} .slide-content')
+            content.evaluate('(n)=>n.scrollTop=n.scrollHeight')
+            assert abs(page.locator(f'#slide-{i+1} h1,#slide-{i+1} h2').bounding_box()['y']-baseline[3])<1
+            content.evaluate('(n)=>n.scrollTop=0')
             for node in nodes.all():
                 assert node.locator('svg.node-icon').count()==1
                 assert node.evaluate('(n)=>["Top","Right","Bottom","Left"].every(x=>parseFloat(getComputedStyle(n)["border"+x+"Width"])>0)'),(width,i,'incomplete node frame')
             page.screenshot(path=str(out/f'slides-{width}-{i+1}.png'),full_page=True)
-            results.append({'width':width,'slide':i+1,'overflow':False})
+            results.append({'width':width,'height':height,'slide':i+1,'overflow':False,'frame_width':geometry[0],'frame_height':geometry[1],'title_y':geometry[3],'question_y':geometry[4],'window_scroll_y':geometry[5]})
         page.select_option('#slide-select','0')
         assert page.locator('#side-prev').is_disabled()
         page.locator('#side-next').click()
@@ -54,6 +62,7 @@ with sync_playwright() as p:
         page.locator('summary').click()
         assert page.locator('details').get_attribute('open') is not None
         assert page.locator('.quiz-answer').is_visible() and page.locator('.quiz-hide').is_visible()
+        assert abs(page.locator('#slide-5 h2').bounding_box()['y']-baseline[3])<1
         page.locator('summary').focus();page.keyboard.press('Enter')
         assert not page.locator('.quiz-answer').is_visible()
         page.locator('#view-all').click();assert page.locator('.slide:visible').count()==10
@@ -75,4 +84,4 @@ report={'version':(R/'VERSION').read_text(encoding='utf-8').strip(),'tested_at_u
 if '--draft' not in sys.argv:
     public=R/'docs/validation';public.mkdir(exist_ok=True)
     (public/f'slides-v{report["version"]}.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('PASS: 20 slide/viewport checks; keyboard, select, reveal, all-page view, deep link, print and no-JS fallback; no page errors.')
+print(f'PASS: {len(results)} slide/viewport checks; equal page size and stable title position; keyboard, select, reveal, all-page view, deep link, print and no-JS fallback; no page errors.')

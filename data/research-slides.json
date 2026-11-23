@@ -39,7 +39,8 @@
         "model",
         "compass",
         "chart"
-      ]
+      ],
+      "diagram_position": "beside-points"
     },
     {
       "title": "配額移轉，不等於實際減排",
@@ -238,7 +239,8 @@
         "mobile": "assets/ga-search-example-mobile.svg",
         "alt": "親代1100和0011交配得到1111和0000，再檢查最多選兩項的限制",
         "caption": "本站自製，沿用Wiki四位元例子；交配依Whitley（2005）投影片11，限制為本站假設。不是碳交易編碼或效能結果。"
-      }
+      },
+      "diagram_position": "beside-points"
     },
     {
       "title": "ACO：逐步構造候選方案",
@@ -284,7 +286,8 @@
         "mobile": "assets/aco-tour-example-mobile.svg",
         "alt": "四城市候選巡迴路線，完成後評估再更新資訊素",
         "caption": "本站自製TSP概念圖，依Dorigo等人（1996）§II–III；路線為示意，非論文原圖或實驗結果。"
-      }
+      },
+      "diagram_position": "beside-points"
     },
     {
       "title": "公平比較之前，先檢查可行性",
