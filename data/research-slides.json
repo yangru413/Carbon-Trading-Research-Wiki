@@ -7,112 +7,428 @@
       "topic": "研究全貌",
       "question": "研究什麼？每一步要留下什麼？",
       "lead": "在交易條件與供需限制下，尋找可比較的配對方案。",
-      "flow": ["研究問題", "資料", "模型", "搜尋方法", "實驗評估"],
-      "points": ["先把問題說清楚，再選方法。", "每一步都要留下可檢查的輸入、假設與產出。"],
-      "output": "一條從問題到證據的研究路徑。",
+      "flow": [
+        "研究問題",
+        "資料",
+        "模型",
+        "搜尋方法",
+        "實驗評估"
+      ],
+      "points": [
+        "先把問題說清楚，再選方法。",
+        "每一步都要留下可檢查的輸入、假設與產出。"
+      ],
+      "output": "先定義研究問題，再依資料建立模型，選方法並檢查證據。",
       "source": "本站依Wiki編排的研究導讀，非已完成實證；比較流程依Beiranvand等人（2017）。",
-      "links": [{"href":"research-methodology.html","label":"研究方法導讀"}]
+      "links": [
+        {
+          "href": "research-methodology.html",
+          "label": "研究方法導讀"
+        }
+      ],
+      "output_label": "懶人包",
+      "diagram": {
+        "src": "assets/matching-example.svg",
+        "mobile": "assets/matching-example-mobile.svg",
+        "alt": "兩位買方與兩位賣方間的一組配對和其他候選關係",
+        "caption": "本站自製配對示意，依Wiki研究問題整理；企業與連線為假設，不是真實交易。"
+      },
+      "flow_icons": [
+        "target",
+        "folder",
+        "model",
+        "compass",
+        "chart"
+      ]
     },
     {
       "title": "配額移轉，不等於實際減排",
       "topic": "碳交易基本概念",
       "question": "為什麼會出現交易需求？",
       "lead": "總量管制與交易結合排放額度限制與配額流通；額度不足可能形成購買需求。",
-      "points": ["移轉改變配額持有量；減排需要排放變化的證據。", "交易商品、制度與適用期間要先對齊。"],
+      "points": [
+        "移轉改變配額持有量；減排需要排放變化的證據。",
+        "交易商品、制度與適用期間要先對齊。"
+      ],
       "image": "assets/allowance-exchange.svg",
       "alt": "企業甲乙移轉二十單位配額，持有量改變，不代表實際減排",
       "caption": "本站自製示意；甲乙與20單位為教學假設，非實際成交。",
-      "output": "明確的商品、制度與研究期間。",
+      "output": "配額移轉改變持有量；實際減排需要排放變化的證據。",
       "source": "European Commission，About the EU ETS；United Nations（1998），Article 17。",
-      "links": [{"href":"carbon-basics.html","label":"制度與原圖依據"},{"href":"eu-ets-history.html","label":"制度期間"}]
+      "links": [
+        {
+          "href": "carbon-basics.html",
+          "label": "制度與原圖依據"
+        },
+        {
+          "href": "eu-ets-history.html",
+          "label": "制度期間"
+        }
+      ],
+      "output_label": "懶人包",
+      "class": "slide-zoom"
     },
     {
       "title": "配對方案要同時比較多種目標",
       "topic": "配對問題與多目標",
       "question": "向誰交易、交易多少，怎樣才算更好？",
       "lead": "CM03第二年規劃四個方向，這是研究提案中的目標，尚不是實驗成果。",
-      "columns": [{"heading":"買方成本","text":"希望較低"},{"heading":"賣方利潤","text":"希望較高"},{"heading":"永續聲譽總和","text":"希望較高"},{"heading":"配對數","text":"希望較多"}],
-      "points": ["某方案成本較低，另一方案利潤較高，可能互不支配；不一定只有一個最好答案。"],
-      "output": "決策內容、目標方向與限制的定義。",
+      "columns": [
+        {
+          "heading": "買方成本",
+          "text": "希望較低"
+        },
+        {
+          "heading": "賣方利潤",
+          "text": "希望較高"
+        },
+        {
+          "heading": "永續聲譽總和",
+          "text": "希望較高"
+        },
+        {
+          "heading": "配對數",
+          "text": "希望較多"
+        }
+      ],
+      "points": [
+        "某方案成本較低，另一方案利潤較高，可能互不支配；不一定只有一個最好答案。"
+      ],
+      "output": "成本、利潤、聲譽與配對數可能互相取捨，不一定只有一個最好方案。",
       "source": "CM03，Theme 2、§3.2.1；取捨依Wiki的Pareto示意，非效能結果。",
-      "links": [{"href":"cm03.html#objectives","label":"四目標與原文定位"},{"href":"pareto.html","label":"Pareto示例"}]
+      "links": [
+        {
+          "href": "cm03.html#objectives",
+          "label": "四目標與原文定位"
+        },
+        {
+          "href": "pareto.html",
+          "label": "Pareto示例"
+        }
+      ],
+      "output_label": "懶人包",
+      "column_icons": [
+        "wallet",
+        "trend",
+        "leaf",
+        "link"
+      ]
     },
     {
       "title": "先整理資料，再說它能支持什麼",
       "topic": "資料與清理",
       "question": "哪些欄位可用，哪些資訊仍然缺少？",
-      "flow": ["保留原始版本", "對照欄位與單位", "檢查ID與粒度", "建立研究樣本"],
-      "columns": [{"heading":"可能已有","text":"帳戶、日期、交易ID、單位種類、數量。"},{"heading":"不能直接假定","text":"成交價、當時供需、資格、聲譽與偏好。"}],
-      "points": ["同一交易ID可能有多列區塊，不能直接當成重複資料刪除。"],
+      "flow": [
+        "保留原始版本",
+        "對照欄位與單位",
+        "檢查ID與粒度",
+        "建立研究樣本"
+      ],
+      "columns": [
+        {
+          "heading": "可能已有",
+          "text": "帳戶、日期、交易ID、單位種類、數量。"
+        },
+        {
+          "heading": "不能直接假定",
+          "text": "成交價、當時供需、資格、聲譽與偏好。"
+        }
+      ],
+      "points": [
+        "同一交易ID可能有多列區塊，不能直接當成重複資料刪除。"
+      ],
       "output": "可追溯的樣本、欄位對照與清理規則。",
       "source": "Abrell（2024），§1、附錄A.3–A.4；流程為本站整理，不代表本機全檔已完成清洗。",
-      "links": [{"href":"sources.html","label":"資料與欄位限制"},{"href":"reading-eutl-database.html","label":"資料庫方法"}]
+      "links": [
+        {
+          "href": "sources.html",
+          "label": "資料與欄位限制"
+        },
+        {
+          "href": "reading-eutl-database.html",
+          "label": "資料庫方法"
+        }
+      ],
+      "output_label": "產出成果",
+      "flow_icons": [
+        "archive",
+        "ruler",
+        "fingerprint",
+        "filter"
+      ],
+      "column_icons": [
+        "database",
+        "question"
+      ]
     },
     {
       "title": "模型連起資料、決策與限制",
       "topic": "模型與假設",
       "question": "如何把資料變成可以求解的問題？",
-      "flow": ["輸入資料", "配對／交易量", "資格與供需限制", "計算各目標"],
-      "points": ["同名符號不代表相同意義：是否配對與交易數量要區分。", "輸入標示觀測、代理或模擬；缺資料不能直接解讀為沒有限制。"],
-      "quiz": {"question":"上午做配對，能直接把當天收盤價當已知資訊嗎？","answer":"若模擬當時決策，收盤價尚不可觀察；需改用當時可取得的資訊，或另交代研究假設。"},
+      "flow": [
+        "輸入資料",
+        "配對／交易量",
+        "資格與供需限制",
+        "計算各目標"
+      ],
+      "points": [
+        "同名符號不代表相同意義：是否配對與交易數量要區分。",
+        "輸入標示觀測、代理或模擬；缺資料不能直接解讀為沒有限制。"
+      ],
+      "quiz": {
+        "question": "上午做配對，能直接把當天收盤價當已知資訊嗎？",
+        "answer": "若模擬當時決策，收盤價尚不可觀察；需改用當時可取得的資訊，或另交代研究假設。"
+      },
       "output": "明列變數、目標、限制與假設的模型版本。",
       "source": "本站依CM03模型疑義與Wiki價格頁整理；流程是教學框架，非已核定模型。",
-      "links": [{"href":"cm03.html#questions","label":"模型待確認事項"},{"href":"sources.html#price","label":"價格與可觀察時間"}]
+      "links": [
+        {
+          "href": "cm03.html#questions",
+          "label": "模型待確認事項"
+        },
+        {
+          "href": "sources.html#price",
+          "label": "價格與可觀察時間"
+        }
+      ],
+      "output_label": "產出成果",
+      "flow_icons": [
+        "folder",
+        "link",
+        "shield",
+        "calculator"
+      ]
     },
     {
       "title": "GA：重組一群候選方案",
       "topic": "基因演算法",
       "question": "新方案如何產生，又怎麼留下？",
       "lead": "基因演算法（Genetic Algorithm, GA）對一群編碼方案進行評估、選擇、交配與突變。",
-      "flow": ["評估族群", "選親代", "交配／突變", "評估與選存活者"],
+      "flow": [
+        "評估族群",
+        "選親代",
+        "交配／突變",
+        "評估與選存活者"
+      ],
       "loop": "未達停止條件 → 以新族群繼續。",
-      "points": ["新方案不保證更好或可行；限制檢查不能省略。"],
+      "points": [
+        "新方案不保證更好或可行；限制檢查不能省略。"
+      ],
       "output": "候選方案與目標值；不能宣稱保證最佳。",
       "source": "Eiben與Schoenauer（2002），§2、§4–5；流程為Wiki自製概念整理，不是EMOBET完整實作。",
-      "links": [{"href":"genetic-algorithm.html","label":"GA機制與微應用"}]
+      "links": [
+        {
+          "href": "genetic-algorithm.html",
+          "label": "GA機制與微應用"
+        },
+        {
+          "href": "genetic-algorithm.html#example",
+          "label": "示意數字與限制"
+        }
+      ],
+      "output_label": "產出成果",
+      "flow_icons": [
+        "chart",
+        "people",
+        "shuffle",
+        "check"
+      ],
+      "diagram": {
+        "src": "assets/ga-search-example.svg",
+        "mobile": "assets/ga-search-example-mobile.svg",
+        "alt": "親代1100和0011交配得到1111和0000，再檢查最多選兩項的限制",
+        "caption": "本站自製，沿用Wiki四位元例子；交配依Whitley（2005）投影片11，限制為本站假設。不是碳交易編碼或效能結果。"
+      }
     },
     {
       "title": "ACO：逐步構造候選方案",
       "topic": "蟻群最佳化",
       "question": "搜尋記憶如何影響下一次選擇？",
       "lead": "蟻群最佳化（Ant Colony Optimization, ACO）的早期Ant System，用資訊素與啟發式資訊引導機率選擇。",
-      "flow": ["合法選項", "逐步構造", "評估方案", "更新資訊素"],
+      "flow": [
+        "合法選項",
+        "逐步構造",
+        "評估方案",
+        "更新資訊素"
+      ],
       "loop": "未達停止條件 → 再構造一批方案。",
-      "points": ["理解上的差別：GA重組既有方案；這裡的ACO從選項逐步構造方案。", "原文主要示範TSP；碳交易仍須另定編碼、評分與限制處理。"],
+      "points": [
+        "理解上的差別：GA重組既有方案；這裡的ACO從選項逐步構造方案。",
+        "原文主要示範TSP；碳交易仍須另定編碼、評分與限制處理。"
+      ],
       "output": "搜尋到的方案與評估值，不是已驗證碳交易成效。",
       "source": "Dorigo等人（1996），§II–III；GA／ACO對照是本站教學整理，不是效能比較。",
-      "links": [{"href":"ant-colony-optimization.html","label":"ACO入門"},{"href":"reading-ant-system.html","label":"原始論文與限制"},{"href":"genetic-algorithm.html","label":"GA對照"}]
+      "links": [
+        {
+          "href": "ant-colony-optimization.html",
+          "label": "ACO入門"
+        },
+        {
+          "href": "reading-ant-system.html",
+          "label": "原始論文與限制"
+        },
+        {
+          "href": "genetic-algorithm.html",
+          "label": "GA對照"
+        }
+      ],
+      "output_label": "產出成果",
+      "flow_icons": [
+        "shield",
+        "route",
+        "chart",
+        "refresh"
+      ],
+      "diagram": {
+        "src": "assets/aco-tour-example.svg",
+        "mobile": "assets/aco-tour-example-mobile.svg",
+        "alt": "四城市候選巡迴路線，完成後評估再更新資訊素",
+        "caption": "本站自製TSP概念圖，依Dorigo等人（1996）§II–III；路線為示意，非論文原圖或實驗結果。"
+      }
     },
     {
       "title": "公平比較之前，先檢查可行性",
       "topic": "實驗與評估",
       "question": "怎麼知道方法有用，而不是只是跑出答案？",
-      "columns": [{"heading":"先驗可行性","text":"交易資格、供需與數量是否滿足？"},{"heading":"再比表現","text":"共用測試情境，明列參數、計算預算、停止及重複設定。"},{"heading":"限制結論","text":"小樣本流程成功，不代表市場整體或方法普遍較好。"}],
-      "points": ["多目標指標與參考集合還需另定；目前Wiki沒有GA／ACO碳交易效能結果。"],
+      "columns": [
+        {
+          "heading": "先驗可行性",
+          "text": "交易資格、供需與數量是否滿足？"
+        },
+        {
+          "heading": "再比表現",
+          "text": "共用測試情境，明列參數、計算預算、停止及重複設定。"
+        },
+        {
+          "heading": "限制結論",
+          "text": "小樣本流程成功，不代表市場整體或方法普遍較好。"
+        }
+      ],
+      "points": [],
       "output": "可重現設定、比較結果與結論適用範圍。",
       "source": "Beiranvand等人（2017），§1.2–§3，主要範圍為單目標；多目標計畫安排見CM03 §3.2.3。",
-      "links": [{"href":"research-methodology.html","label":"比較與評估路徑"},{"href":"reading-benchmarking.html","label":"方法論文"},{"href":"cm03.html#methods","label":"計畫評估安排"}]
+      "links": [
+        {
+          "href": "research-methodology.html",
+          "label": "比較與評估路徑"
+        },
+        {
+          "href": "reading-benchmarking.html",
+          "label": "方法論文"
+        },
+        {
+          "href": "cm03.html#methods",
+          "label": "計畫評估安排"
+        }
+      ],
+      "output_label": "產出成果",
+      "column_icons": [
+        "shield",
+        "chart",
+        "scope"
+      ],
+      "diagram": {
+        "src": "assets/feasibility-example.svg",
+        "mobile": "assets/feasibility-example-mobile.svg",
+        "alt": "乙供給上限10丙上限5，甲需求12；方案A乙8丙4可行，方案B乙11丙1超額",
+        "caption": "本站自製供需示意；所有數字均為教學假設。可行性指每項限制均滿足，非真實研究結果。"
+      }
     },
     {
       "title": "留下能讓下一屆重做的研究",
       "topic": "跨年度銜接",
       "question": "需要承接什麼，又要交付什麼？",
-      "columns": [{"heading":"第一年 → 輸入","text":"索取指標定義、企業對照、版本與可用時間。"},{"heading":"第二年 → 配對","text":"保存模型、清理規則、候選解與評估紀錄。"},{"heading":"第三年 → 後續研究","text":"提供可追溯結果、假設與限制，供規則研究參考。"}],
-      "points": ["以上是本站交接建議。第一年成果未取得，不把預期輸入寫成已交付成果。"],
+      "columns": [
+        {
+          "heading": "第一年 → 輸入",
+          "text": "索取指標定義、企業對照、版本與可用時間。",
+          "image": "assets/handoff-input.svg"
+        },
+        {
+          "heading": "第二年 → 配對",
+          "text": "保存模型、清理規則、候選解與評估紀錄。",
+          "image": "assets/handoff-records.svg"
+        },
+        {
+          "heading": "第三年 → 後續研究",
+          "text": "提供可追溯結果、假設與限制，供規則研究參考。",
+          "image": "assets/handoff-rules.svg"
+        }
+      ],
+      "points": [],
       "output": "有版本、定義與限制的交接材料。",
-      "source": "CM03 Theme 1–3；具體交接項目是本站建議，並非已完成交付。",
-      "links": [{"href":"start.html","label":"年度關係"},{"href":"research-methodology.html","label":"交接建議"}]
+      "source": "CM03 Theme 1–3；交接圖為本站依研究流程整理的建議。",
+      "links": [
+        {
+          "href": "start.html",
+          "label": "年度關係"
+        },
+        {
+          "href": "research-methodology.html",
+          "label": "交接建議"
+        }
+      ],
+      "output_label": "產出成果",
+      "column_icons": [
+        "database",
+        "archive",
+        "branch"
+      ],
+      "diagram_note": "三張圖均為本站自製交接示意，依CM03年度脈絡與Wiki交接建議整理。"
     },
     {
       "title": "研究不是直線：失敗就回到原因",
       "topic": "研究流程回顧",
       "question": "在哪裡退回？回去要改什麼？",
-      "flow": ["問題", "資料", "模型", "方法", "實驗"],
-      "columns": [{"heading":"資料不足","text":"回到來源與資料：補讀、補欄位或改樣本。"},{"heading":"方案不可行","text":"回到模型與方法：核對限制、編碼及處理方式。"},{"heading":"比較不公平","text":"回到實驗設定：對齊測試情境、預算與指標。"}],
-      "points": ["修改後，重查原問題與受影響項目；保存改了什麼、為何改。"],
+      "flow": [
+        "問題",
+        "資料",
+        "模型",
+        "方法",
+        "實驗"
+      ],
+      "columns": [
+        {
+          "heading": "資料不足",
+          "text": "回到來源與資料：補讀、補欄位或改樣本。"
+        },
+        {
+          "heading": "方案不可行",
+          "text": "回到模型與方法：核對限制、編碼及處理方式。"
+        },
+        {
+          "heading": "比較不公平",
+          "text": "回到實驗設定：對齊測試情境、預算與指標。"
+        }
+      ],
+      "points": [
+        "修改後，重查原問題與受影響項目；保存改了什麼、為何改。"
+      ],
       "output": "可解釋的修正紀錄，而不只是最後一組答案。",
       "source": "本站依Wiki研究導讀整理的研究建議；不是宣稱已執行碳交易實驗。這與簡報製作graph是兩個不同流程。",
-      "links": [{"href":"research-methodology.html","label":"重讀研究導讀"},{"href":"literature.html","label":"文獻與完整出處"}]
+      "links": [
+        {
+          "href": "research-methodology.html",
+          "label": "重讀研究導讀"
+        },
+        {
+          "href": "literature.html",
+          "label": "文獻與完整出處"
+        }
+      ],
+      "output_label": "產出成果",
+      "flow_icons": [
+        "target",
+        "folder",
+        "model",
+        "compass",
+        "flask"
+      ],
+      "column_icons": [
+        "folder-search",
+        "shield",
+        "balance"
+      ]
     }
   ]
 }

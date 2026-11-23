@@ -1,9 +1,10 @@
 # 碳交易 Wiki
 
-第一個正式版本：**v1.0.0**（2026-11-23）。版本見 `VERSION`，變更見 [CHANGELOG](CHANGELOG.md)；舊Git提交保留，`v1.0.0`標籤作為目前全部成果的版本基準。
+目前版本：**v1.0.1**（2026-11-23）。第一個正式基準v1.0.0保留不動；版本見 `VERSION`，變更見 [CHANGELOG](CHANGELOG.md)。
 
 - [完整需求摘要](docs/requirements-summary.md)：包含歷史要求、最新決策與暫緩項目。
-- [最新版簡報自檢報告](docs/slides-self-check-v1.0.0.md)：graph各階段產物、真實loop、測試與SHA-256證據。
+- [第一版流程自檢報告](docs/slides-self-check-v1.0.0.md)：graph各階段產物、真實loop、測試與SHA-256證據。
+- [逐頁修改與v1.0.1檢查](docs/slides-self-check-v1.0.1.md)：圖示、圖解、練習題與逐頁要求的驗證。
 - [工作流程反思](docs/workflow-reflection.md)：出問題節點、檢查前移與作業三題。
 
 以 CM03 第二年 Theme 2 為重心的繁體中文研究指南，連結碳交易基礎、配對模型、多目標、研究資料、求解及實驗。白話解釋保留學術限制；計畫摘要、本站解讀與示例分開標示。

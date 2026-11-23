@@ -1,25 +1,28 @@
-# 簡報逐頁稿（graph重製版）
+# 教學簡報逐頁稿
 
-日期：2026-11-23。先依已確認大綱撰寫本稿，再生成HTML。此稿經AI依Wiki核對，不代表使用者已逐頁驗收。
+由data/research-slides.json生成；圖解與數字為已標示來源的教學示意。
 
-## 1. 碳交易配對研究如何進行？
+## P1 碳交易配對研究如何進行？
 
 教學問題：研究什麼？每一步要留下什麼？
 
 在交易條件與供需限制下，尋找可比較的配對方案。
 
-圖解：研究問題 → 資料 → 模型 → 搜尋方法 → 實驗評估
+流程：研究問題 → 資料 → 模型 → 搜尋方法 → 實驗評估
 
 - 先把問題說清楚，再選方法。
 - 每一步都要留下可檢查的輸入、假設與產出。
 
-產出：一條從問題到證據的研究路徑。
+圖解：assets/matching-example.svg
+圖說：本站自製配對示意，依Wiki研究問題整理；企業與連線為假設，不是真實交易。
 
-依據：本站依Wiki編排的研究導讀，非已完成實證；比較流程依Beiranvand等人（2017）。
+懶人包：先定義研究問題，再依資料建立模型，選方法並檢查證據。
 
-Wiki入口：research-methodology.html
+來源：本站依Wiki編排的研究導讀，非已完成實證；比較流程依Beiranvand等人（2017）。
 
-## 2. 配額移轉，不等於實際減排
+Wiki：research-methodology.html
+
+## P2 配額移轉，不等於實際減排
 
 教學問題：為什麼會出現交易需求？
 
@@ -28,13 +31,13 @@ Wiki入口：research-methodology.html
 - 移轉改變配額持有量；減排需要排放變化的證據。
 - 交易商品、制度與適用期間要先對齊。
 
-產出：明確的商品、制度與研究期間。
+懶人包：配額移轉改變持有量；實際減排需要排放變化的證據。
 
-依據：European Commission，About the EU ETS；United Nations（1998），Article 17。
+來源：European Commission，About the EU ETS；United Nations（1998），Article 17。
 
-Wiki入口：carbon-basics.html；eu-ets-history.html
+Wiki：carbon-basics.html；eu-ets-history.html
 
-## 3. 配對方案要同時比較多種目標
+## P3 配對方案要同時比較多種目標
 
 教學問題：向誰交易、交易多少，怎樣才算更好？
 
@@ -44,88 +47,88 @@ CM03第二年規劃四個方向，這是研究提案中的目標，尚不是實�
 - 賣方利潤：希望較高
 - 永續聲譽總和：希望較高
 - 配對數：希望較多
-
 - 某方案成本較低，另一方案利潤較高，可能互不支配；不一定只有一個最好答案。
 
-產出：決策內容、目標方向與限制的定義。
+懶人包：成本、利潤、聲譽與配對數可能互相取捨，不一定只有一個最好方案。
 
-依據：CM03，Theme 2、§3.2.1；取捨依Wiki的Pareto示意，非效能結果。
+來源：CM03，Theme 2、§3.2.1；取捨依Wiki的Pareto示意，非效能結果。
 
-Wiki入口：cm03.html#objectives；pareto.html
+Wiki：cm03.html#objectives；pareto.html
 
-## 4. 先整理資料，再說它能支持什麼
+## P4 先整理資料，再說它能支持什麼
 
 教學問題：哪些欄位可用，哪些資訊仍然缺少？
 
-圖解：保留原始版本 → 對照欄位與單位 → 檢查ID與粒度 → 建立研究樣本
+流程：保留原始版本 → 對照欄位與單位 → 檢查ID與粒度 → 建立研究樣本
 
 - 可能已有：帳戶、日期、交易ID、單位種類、數量。
 - 不能直接假定：成交價、當時供需、資格、聲譽與偏好。
-
 - 同一交易ID可能有多列區塊，不能直接當成重複資料刪除。
 
-產出：可追溯的樣本、欄位對照與清理規則。
+產出成果：可追溯的樣本、欄位對照與清理規則。
 
-依據：Abrell（2024），§1、附錄A.3–A.4；流程為本站整理，不代表本機全檔已完成清洗。
+來源：Abrell（2024），§1、附錄A.3–A.4；流程為本站整理，不代表本機全檔已完成清洗。
 
-Wiki入口：sources.html；reading-eutl-database.html
+Wiki：sources.html；reading-eutl-database.html
 
-## 5. 模型連起資料、決策與限制
+## P5 模型連起資料、決策與限制
 
 教學問題：如何把資料變成可以求解的問題？
 
-圖解：輸入資料 → 配對／交易量 → 資格與供需限制 → 計算各目標
+流程：輸入資料 → 配對／交易量 → 資格與供需限制 → 計算各目標
 
 - 同名符號不代表相同意義：是否配對與交易數量要區分。
 - 輸入標示觀測、代理或模擬；缺資料不能直接解讀為沒有限制。
 
-檢核題：上午做配對，能直接把當天收盤價當已知資訊嗎？
+練習題：上午做配對，能直接把當天收盤價當已知資訊嗎？
 答案：若模擬當時決策，收盤價尚不可觀察；需改用當時可取得的資訊，或另交代研究假設。
 
-產出：明列變數、目標、限制與假設的模型版本。
+產出成果：明列變數、目標、限制與假設的模型版本。
 
-依據：本站依CM03模型疑義與Wiki價格頁整理；流程是教學框架，非已核定模型。
+來源：本站依CM03模型疑義與Wiki價格頁整理；流程是教學框架，非已核定模型。
 
-Wiki入口：cm03.html#questions；sources.html#price
+Wiki：cm03.html#questions；sources.html#price
 
-## 6. GA：重組一群候選方案
+## P6 GA：重組一群候選方案
 
 教學問題：新方案如何產生，又怎麼留下？
 
 基因演算法（Genetic Algorithm, GA）對一群編碼方案進行評估、選擇、交配與突變。
 
-圖解：評估族群 → 選親代 → 交配／突變 → 評估與選存活者
-
-迴圈：未達停止條件 → 以新族群繼續。
+流程：評估族群 → 選親代 → 交配／突變 → 評估與選存活者
 
 - 新方案不保證更好或可行；限制檢查不能省略。
 
-產出：候選方案與目標值；不能宣稱保證最佳。
+圖解：assets/ga-search-example.svg
+圖說：本站自製，沿用Wiki四位元例子；交配依Whitley（2005）投影片11，限制為本站假設。不是碳交易編碼或效能結果。
 
-依據：Eiben與Schoenauer（2002），§2、§4–5；流程為Wiki自製概念整理，不是EMOBET完整實作。
+產出成果：候選方案與目標值；不能宣稱保證最佳。
 
-Wiki入口：genetic-algorithm.html
+來源：Eiben與Schoenauer（2002），§2、§4–5；流程為Wiki自製概念整理，不是EMOBET完整實作。
 
-## 7. ACO：逐步構造候選方案
+Wiki：genetic-algorithm.html；genetic-algorithm.html#example
+
+## P7 ACO：逐步構造候選方案
 
 教學問題：搜尋記憶如何影響下一次選擇？
 
 蟻群最佳化（Ant Colony Optimization, ACO）的早期Ant System，用資訊素與啟發式資訊引導機率選擇。
 
-圖解：合法選項 → 逐步構造 → 評估方案 → 更新資訊素
-
-迴圈：未達停止條件 → 再構造一批方案。
+流程：合法選項 → 逐步構造 → 評估方案 → 更新資訊素
 
 - 理解上的差別：GA重組既有方案；這裡的ACO從選項逐步構造方案。
 - 原文主要示範TSP；碳交易仍須另定編碼、評分與限制處理。
 
-產出：搜尋到的方案與評估值，不是已驗證碳交易成效。
+圖解：assets/aco-tour-example.svg
+圖說：本站自製TSP概念圖，依Dorigo等人（1996）§II–III；路線為示意，非論文原圖或實驗結果。
 
-依據：Dorigo等人（1996），§II–III；GA／ACO對照是本站教學整理，不是效能比較。
+產出成果：搜尋到的方案與評估值，不是已驗證碳交易成效。
 
-Wiki入口：ant-colony-optimization.html；reading-ant-system.html；genetic-algorithm.html
+來源：Dorigo等人（1996），§II–III；GA／ACO對照是本站教學整理，不是效能比較。
 
-## 8. 公平比較之前，先檢查可行性
+Wiki：ant-colony-optimization.html；reading-ant-system.html；genetic-algorithm.html
+
+## P8 公平比較之前，先檢查可行性
 
 教學問題：怎麼知道方法有用，而不是只是跑出答案？
 
@@ -133,15 +136,16 @@ Wiki入口：ant-colony-optimization.html；reading-ant-system.html；genetic-al
 - 再比表現：共用測試情境，明列參數、計算預算、停止及重複設定。
 - 限制結論：小樣本流程成功，不代表市場整體或方法普遍較好。
 
-- 多目標指標與參考集合還需另定；目前Wiki沒有GA／ACO碳交易效能結果。
+圖解：assets/feasibility-example.svg
+圖說：本站自製供需示意；所有數字均為教學假設。可行性指每項限制均滿足，非真實研究結果。
 
-產出：可重現設定、比較結果與結論適用範圍。
+產出成果：可重現設定、比較結果與結論適用範圍。
 
-依據：Beiranvand等人（2017），§1.2–§3，主要範圍為單目標；多目標計畫安排見CM03 §3.2.3。
+來源：Beiranvand等人（2017），§1.2–§3，主要範圍為單目標；多目標計畫安排見CM03 §3.2.3。
 
-Wiki入口：research-methodology.html；reading-benchmarking.html；cm03.html#methods
+Wiki：research-methodology.html；reading-benchmarking.html；cm03.html#methods
 
-## 9. 留下能讓下一屆重做的研究
+## P9 留下能讓下一屆重做的研究
 
 教學問題：需要承接什麼，又要交付什麼？
 
@@ -149,37 +153,25 @@ Wiki入口：research-methodology.html；reading-benchmarking.html；cm03.html#m
 - 第二年 → 配對：保存模型、清理規則、候選解與評估紀錄。
 - 第三年 → 後續研究：提供可追溯結果、假設與限制，供規則研究參考。
 
-- 以上是本站交接建議。第一年成果未取得，不把預期輸入寫成已交付成果。
+產出成果：有版本、定義與限制的交接材料。
 
-產出：有版本、定義與限制的交接材料。
+來源：CM03 Theme 1–3；交接圖為本站依研究流程整理的建議。
 
-依據：CM03 Theme 1–3；具體交接項目是本站建議，並非已完成交付。
+Wiki：start.html；research-methodology.html
 
-Wiki入口：start.html；research-methodology.html
-
-## 10. 研究不是直線：失敗就回到原因
+## P10 研究不是直線：失敗就回到原因
 
 教學問題：在哪裡退回？回去要改什麼？
 
-圖解：問題 → 資料 → 模型 → 方法 → 實驗
+流程：問題 → 資料 → 模型 → 方法 → 實驗
 
 - 資料不足：回到來源與資料：補讀、補欄位或改樣本。
 - 方案不可行：回到模型與方法：核對限制、編碼及處理方式。
 - 比較不公平：回到實驗設定：對齊測試情境、預算與指標。
-
 - 修改後，重查原問題與受影響項目；保存改了什麼、為何改。
 
-產出：可解釋的修正紀錄，而不只是最後一組答案。
+產出成果：可解釋的修正紀錄，而不只是最後一組答案。
 
-依據：本站依Wiki研究導讀整理的研究建議；不是宣稱已執行碳交易實驗。這與簡報製作graph是兩個不同流程。
+來源：本站依Wiki研究導讀整理的研究建議；不是宣稱已執行碳交易實驗。這與簡報製作graph是兩個不同流程。
 
-Wiki入口：research-methodology.html；literature.html
-
-## 逐頁內容核對結果
-
-- 10頁依已確認順序，每頁具問題、產出與來源入口。
-- 計畫四目標、已取得資料、代理／模擬、實證結果分開表述。
-- ACO的TSP限制保留；GA／ACO差異為機制導讀，不作效能排名。
-- 交接資料標成建議，未聲稱第一年已交付成果。
-- 第10頁是研究工作的退回規則；assets/slides-workflow.svg是製作簡報的graph，兩者不混用。
-- 本批沒有新增論文主張或進行實證實驗；仍待使用者試讀。
+Wiki：research-methodology.html；literature.html

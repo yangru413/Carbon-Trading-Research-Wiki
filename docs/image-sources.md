@@ -1,5 +1,14 @@
 # 圖像來源與本批調整
 
+## v1.0.1：逐頁教學簡圖
+- matching-example.svg：本站自製兩買方／兩賣方配對關係，依研究導讀；連線僅表示候選與示意選擇，不表示配額流向或實際成交。
+- ga-search-example.svg：本站自製，依Whitley（2005）投影片11及Wiki既有四位元示例；1100／0011交換後段得到1111／0000，限制最多選兩項為本站假設。
+- aco-tour-example.svg：本站自製，依Dorigo等人（1996）§II–III的TSP構造、評估與資訊素更新概念，四城市路線非論文原圖或實驗結果。
+- feasibility-example.svg：本站自製，乙供給上限10、丙5、甲需求12；A=(8,4)通過，B=(11,1)違反乙上限。數字為教學假設。
+- handoff-input.svg、handoff-records.svg、handoff-rules.svg：本站自製年度交接材料示意，依CM03 Theme 1–3及Wiki交接建議，不代表已完成交付。
+- 四張*-mobile.svg為上述配對／GA／ACO／可行性圖的窄螢幕重排；同一內容，不是額外證據。
+- 上述圖像由scripts/draw-slide-illustrations.py原創程式繪製，不含外部圖庫或重製原圖。所有圖在簡報附替代文字與可見來源／示意圖說。
+
 ## 2026-11-23 追加：簡報節點圖示
 簡報內資料夾、模型、圖表、人物、搜尋、檢核等圖示由本站在 scripts/render-research-slides.py 以SVG路徑自製；無外部圖庫或字型依賴，純裝飾並設aria-hidden，不新增圖示標題或正文。既有圖說與研究依據保留。大張graph僅將圈號改01–07。
 

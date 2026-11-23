@@ -1,0 +1,146 @@
+{
+  "version": "1.0.1",
+  "tested_at_utc": "2026-11-23T14:48:06.784877+00:00",
+  "browser": "Microsoft Edge",
+  "results": [
+    {
+      "width": 1440,
+      "slide": 1,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 2,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 3,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 4,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 5,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 6,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 7,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 8,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 9,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "slide": 10,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 1,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 2,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 3,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 4,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 5,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 6,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 7,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 8,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 9,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "slide": 10,
+      "overflow": false
+    }
+  ],
+  "keyboard": true,
+  "no_js": true,
+  "print": true,
+  "deep_link": true,
+  "interaction_checks": [
+    "fixed side buttons after scroll",
+    "first/last boundaries",
+    "no duplicate bottom buttons",
+    "select navigation",
+    "question reveal",
+    "all-page view",
+    "manuscript titles match",
+    "source links and output on each slide"
+  ],
+  "page_errors": [],
+  "hash_policy": "SHA-256: text uses LF-normalized bytes for Git/Windows portability; PNG uses original bytes",
+  "sha256": {
+    "data/research-slides.json": "7a12969e8274ab83c9232ec32a443cdc18e9c3ce3fd5e4ff631fb529fe92261e",
+    "content/research-slides.html": "6bb4065d26ef6067a120bbf79b3a68e1eeeb9bd96276de69f82652c1abd73fa5",
+    "research-slides.html": "9430b7e89725650d588d9241a6291517a5e38aa6fd03cc570b6aa1092f1cfe5e",
+    "css/slides.css": "782a693e3a3d1008803b21151008e39a4d1c788567a050bff9d57017ad387157",
+    "js/slides.js": "49201adea5e1a09c16624a3fc4dee68d240a74b56c3b0e0b7719f669e4e6ba3d",
+    "scripts/check-slides.py": "1b7b8afb25a1c1b880ad74c84040dbcb6cf0f956e6a417f94a03715fa88ed99b",
+    "scripts/render-research-slides.py": "607625da0978b82b34133d67f6a32fb9c1b94d2b06d4fab8b3d96fac444c5ea4",
+    "assets/slides-workflow.svg": "90cdab81c1b6c61d9a80c130a57c9ec9c0c2a52fca2cfda2acc1f1b4d7a23afc",
+    "assets/slides-workflow.png": "784f0efbcaaef9512bf8089a3cde3c14b24436c90ea01f5313115cbfc8308fa0",
+    "scripts/draw-slide-illustrations.py": "99eb9fa5e6a96af4d7b54707ac7fff72aa783a6b7c55420febe386b64195cdf5",
+    "assets/aco-tour-example-mobile.svg": "510fd77fa2351286067abc5db02f9f01e015f192e480ff86138791daa5c633ce",
+    "assets/aco-tour-example.svg": "76a1f75de0f8e04c95c4398ebd14d7dc0e99faa3624b6a3aec78227836292ca7",
+    "assets/feasibility-example-mobile.svg": "553c6813af07553a5ea616b51fa0731b54e52a69dfb9067fa47f79fc50723b70",
+    "assets/feasibility-example.svg": "b2e231a90aadc5385ab210aa1b66173faf64c16d3d0e8844a28ce892421b0f68",
+    "assets/ga-search-example-mobile.svg": "fececfac222fc5c1ff19d58480066058840343a12c61a31ccfb0b12138ae4745",
+    "assets/ga-search-example.svg": "b37996ca60a96ffe74e65db9065d96ca85d57f8cb1a06d9fb416bcf8ca60e34d",
+    "assets/matching-example-mobile.svg": "6f259dbbc44396c0abe4fbc346a20ef5c3ed14b91d01b4db715116d1de116af1",
+    "assets/matching-example.svg": "f5193e5cdcf185b3429de8f05bce29e096f2cc621920ceccb3a2994fbec14915",
+    "assets/handoff-input.svg": "fa2116dff475ce44c200c276c64ec951d42ab8321da9aaadb1692712ea0d3c40",
+    "assets/handoff-records.svg": "934f653786374793520ada2eefe34fe387b9bf48a6b649c017969a28b271ede9",
+    "assets/handoff-rules.svg": "9a0fd82d2321549f6209b13f814417fac1e1f458b5010094b2933de3dca83a92"
+  }
+}

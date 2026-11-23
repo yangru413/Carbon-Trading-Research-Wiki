@@ -27,6 +27,9 @@ with sync_playwright() as p:
             assert page.locator(f'#slide-{i+1} .slide-source a').count()>=1
             assert page.locator(f'#slide-{i+1} .slide-output').count()==1
             nodes=page.locator(f'#slide-{i+1} .research-flow li, #slide-{i+1} .slide-concepts > div')
+            kinds=nodes.locator('svg.node-icon').evaluate_all('(xs)=>xs.map(x=>x.dataset.icon)')
+            assert len(kinds)==len(set(kinds)),(i,'duplicate icons on page')
+            assert page.locator(f'#slide-{i+1} .slide-output strong').inner_text() in ('懶人包：','產出成果：')
             for node in nodes.all():
                 assert node.locator('svg.node-icon').count()==1
                 assert node.evaluate('(n)=>["Top","Right","Bottom","Left"].every(x=>parseFloat(getComputedStyle(n)["border"+x+"Width"])>0)'),(width,i,'incomplete node frame')
@@ -45,8 +48,14 @@ with sync_playwright() as p:
         page.keyboard.press('ArrowRight');assert page.locator('#slide-status').inner_text()=='2 / 10'
         page.keyboard.press('End');assert page.locator('#side-next').is_disabled()
         page.keyboard.press('Home');assert page.locator('#side-prev').is_disabled()
-        page.select_option('#slide-select','4');page.locator('summary').click()
+        page.select_option('#slide-select','4')
+        assert page.locator('.quiz-show').is_visible()
+        assert not page.locator('.quiz-answer').is_visible()
+        page.locator('summary').click()
         assert page.locator('details').get_attribute('open') is not None
+        assert page.locator('.quiz-answer').is_visible() and page.locator('.quiz-hide').is_visible()
+        page.locator('summary').focus();page.keyboard.press('Enter')
+        assert not page.locator('.quiz-answer').is_visible()
         page.locator('#view-all').click();assert page.locator('.slide:visible').count()==10
         assert not page.locator('.deck-side-nav').is_visible()
         page.locator('#view-all').click();assert page.locator('.slide:visible').count()==1
@@ -60,6 +69,7 @@ with sync_playwright() as p:
     assert page.locator('.slide:visible').count()==10
     b.close()
 files=['data/research-slides.json','content/research-slides.html','research-slides.html','css/slides.css','js/slides.js','scripts/check-slides.py','scripts/render-research-slides.py','assets/slides-workflow.svg','assets/slides-workflow.png']
+files+=['scripts/draw-slide-illustrations.py']+[str(f.relative_to(R)).replace('\\','/') for f in sorted((R/'assets').glob('*example*.svg'))]+[str(f.relative_to(R)).replace('\\','/') for f in sorted((R/'assets').glob('handoff-*.svg'))]
 report={'version':(R/'VERSION').read_text(encoding='utf-8').strip(),'tested_at_utc':datetime.now(timezone.utc).isoformat(),'browser':'Microsoft Edge','results':results,'keyboard':True,'no_js':True,'print':True,'deep_link':True,'interaction_checks':['fixed side buttons after scroll','first/last boundaries','no duplicate bottom buttons','select navigation','question reveal','all-page view','manuscript titles match','source links and output on each slide'],'page_errors':[],'hash_policy':'SHA-256: text uses LF-normalized bytes for Git/Windows portability; PNG uses original bytes','sha256':{f:hashlib.sha256((R/f).read_bytes() if f.endswith('.png') else (R/f).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for f in files}}
 (R/'.work/slides-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 if '--draft' not in sys.argv:
