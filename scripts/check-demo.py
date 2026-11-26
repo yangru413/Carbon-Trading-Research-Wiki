@@ -170,7 +170,7 @@ if '--browser' in sys.argv:
                     assert page.locator('[data-extension-child="methods"]:visible').count()==method_count
                     assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')
                     page.screenshot(path=str(shots/f'cards-expanded-{mode}.png'),full_page=True)
-                    page.locator('[data-extension-child="datasets"] [data-extension-link]').click()
+                    page.locator('[data-extension-child="datasets"] [href="transaction-log.html"]').click()
                     assert page.url.endswith('/transaction-log.html')
                     page.get_by_role('link',name='返回所屬章節 →',exact=True).click()
                     assert page.url.endswith('/sources.html#limits')

@@ -1,0 +1,35 @@
+<main id="main" class="wrap">
+  <div class="lesson-position"><a href="index.html#topic-matching">← 返回交易配對模型</a></div>
+  <header class="article-hero">
+    <span class="tag">比較整理</span>
+    <h1>EU ETS 交易角色、成本與取樣</h1>
+    <p class="lede">從經紀視角設計配對，並判斷哪些成交成本與市場價格可用於估算。</p>
+    <div class="meta"><span>更新：2026-11-26</span></div>
+  </header>
+  <article class="prose">
+    <section>
+      <h2>經紀撮合，清算處理成交後的交割</h2>
+      <p data-cite="europe-economics2023" data-location="§2.2.2、圖 2-6、Box 1">經紀或代理服務常由銀行、投資服務商、專業碳經紀及受託顧問提供。它們可代客詢價或執行委託。金融中介也可能用自己的帳戶報價買賣，並從價差獲利。調查中，多數經由拍賣或二級市場購買配額的受訪履約業者使用金融中介。此處的中介範圍涵蓋銀行與投資服務商，調查無法單獨估計專業碳經紀的市場占比。</p>
+      <p data-cite="registry-interplay2015,ice-clear2021" data-location="交易所與清算機構說明、ICE E21/004 第 1 頁">中央對手方（Central Counterparty, CCP）介入清算後，分別成為原買方與原賣方的合約對手方，管理交割與違約風險。EEX 的例子是 European Commodity Clearing（ECC），ICE 的案例是 ICE Clear Europe。終端企業可透過清算會員接取服務。登記資料如果出現清算機構，只能確認該機構出現在移轉一側，還要有交易資料才能辨認終端買賣方。</p>
+      <p data-kind="interpretation" data-plan-ref="year2,roles,four">若要模擬其中一種角色，採受託撮合的經紀視角最貼近 CM03。研究者以中立配對平台的身分，從可行的買賣組合安排數量，同時比較買方成本、賣方利潤、買方永續聲譽及配對數。若把保證金、違約處理與交易後交割排程當主要決策，研究問題會轉向清算。模型可用是否採清算區分交割情境。</p>
+    </section>
+    <section>
+      <h2>什麼費用在成交後才發生？</h2>
+      <p data-cite="eex-fee-archive,ecc-invoice,grunig2014,registry-interplay2015" data-location="EEX 歷史費率表入口、ECC 發票項目、Grünig 等 §3.2.6–§3.2.7、歐盟委託報告交易後流程">成交費是交易所對成交或登錄服務的收費。清算費是對清算、風險管理與交割服務的收費。費目可按成交量收取，費率單位由供應商的價目表或客戶合約指定。交易所與清算機構費用可能先開給會員，再依會員與客戶的約定轉收。經紀費由受託服務的收費方依合約計算，可能按已成交訂單、按量收取，或反映在報價中。若雙方直接議價、無經紀且不使用中央清算，這兩項服務費可省，雙方仍須自行安排付款與配額交割。</p>
+      <p data-cite="grunig2014,grunig-questionnaire" data-location="報告 §3.2.7；德文問卷 F45–F49">每筆 €6–20 是德國歷史調查裡業者回報的清算銀行收費區間。原問卷的選項共五組：€1–5、€6–20、€21–50、€51–100、超過 €100。問卷與報告未載明分組理由，也未公布區間內按量、客戶或交易條件浮動的計價規則。可用兩個端點做敏感度測試。要估 2020–2022 的確切費用，須取得成交時適用的場地、商品、費率版本，以及使用中介時的合約或帳單。雙方應各按實際條件計費。</p>
+      <p data-cite="ecc-fees2021,eex-fee-archive" data-location="ECC 公告 32/2021 第 1 頁；EEX 費率表歷史檔">可從 <a href="https://www.eex.com/fileadmin/EEX/Downloads/Trading/Price_Lists/20251014_Price_List_History_2020-2023.zip">EEX 2020–2023 年費率表（ZIP）</a>查交易所費用。ECC 另有獨立的清算公告。例如 2021-09-01 起，特定現貨與期貨價差單的免費部分從期貨端轉到現貨端，期貨端照標準費率收費。這項規則證明生效日、商品與交易方式會改變應套用的費率。</p>
+      <p data-cite="eex-auction-fees2020" data-location="§1，第 2 頁費率表">一級拍賣另有正式收費例子。2020-02-03 至 2020-08-31，EEX 共同拍賣平台向得標方按每 500 EUA 收 €1.66 交易所費及 €0.28 清算交割費。文件依當時的拍賣規則第 51 條及服務合約說明費用上限。此處每批金額固定，但總費用仍隨得標數量增加。</p>
+      <p data-kind="interpretation" data-cite="grunig2014,registry-interplay2015" data-location="Grünig 等圖 15、23 與 §3.2.7；歐盟委託報告交易後流程">若要加入時間成本，可針對已成交訂單記錄成交確認、付款與配額移轉等處理所占用的工時。德國調查的行政工時採年度估計，套用前需要能區分每筆成交新增的工時與其他作業。</p>
+      <p data-kind="interpretation" data-plan-ref="amount,four" data-cite="grunig2014" data-location="§3.2.6–§3.2.7 費用口徑；下式為本站建模">只計成交才會新增的成本，排除開戶、會籍、定期維護及排放監測。對一條候選配對可先用 <code>Cᵢⱼ = pᵢⱼqᵢⱼ + vᵢⱼqᵢⱼ + Fᵢⱼyᵢⱼ</code>。<var>q</var> 是 EUA 數量，<var>p</var> 是每 EUA 價格，<var>v</var> 是每 EUA 已知費用，<var>F</var> 是每次計費訂單的固定費，<var>y</var> 在一條配對只對應一張計費訂單時取 0 或 1。報價已包含的費用只計一次。若總量已固定、每單位成本相同且每次都有相同正固定費，才可用最少計費訂單來代表最低成本。這項敏感度情境可用來比較 CM03 的配對數目標。</p>
+    </section>
+    <section>
+      <h2>價格代理、移轉分類與編碼</h2>
+      <p data-cite="dehst2019q4,dehst2019year,icap-prices" data-location="DEHSt 季報表 1、年報第 18 頁；ICAP EU ETS 來源說明">德國委由 EEX 舉行的 2019-12-13 EUA 拍賣，在 09:00–11:00（CET）收標，€25.33/EUA 是該場的統一結算價。德國 2019 年 12 月拍賣的成交量加權均價為 €25.02，第四季為 €24.60。年報另載 2019-12-31 ICE 近端 12 月期貨收盤價 €24.64/EUA。EEX 拍賣給出有來源、可重算的基準，使用 12 月 13 日可當早於 2020 年初配對的拍賣情境。若要貼近二級市場，可另用時間更接近的 ICE 期貨作情境。ICAP 提供歷史價格與口徑說明。相同的代理價格無法區分不同交易對手報價。</p>
+      <p data-cite="borghesi-flori2018,abrell-transfers2024" data-location="Borghesi 與 Flori 表 1；Abrell §3.1、§4.2">交易碼 <code>10-0</code> 在文獻的 EUTL 分類表中稱為 Internal Transfer（內部移轉）。配額移轉可來自現貨、期貨、大宗場外交易的交割，也可能來自清算轉手或集團內部調度。僅靠 10-0 無法確定是否為二級市場成交，也無法確定成交時刻、場地、價格、收費或終端對手。</p>
+      <p data-kind="interpretation" data-cite="abrell-transfers2024,benchmark2017" data-location="Abrell §4.2；Beiranvand 等 §2–§3；以下為抽樣與編碼做法">固定兩小時窗可用於可重現的先導測試。先記日期、邊界、時區、單位及篩選碼，再以移轉 ID 與單位區塊查重。轉出與轉入帳戶各依「登記區＋帳戶 ID」去重、排序，再編成 <code>Transᵢ</code>、<code>Acqⱼ</code>，排序只用於索引。若需外推，應事先指定多日期或分層抽樣。若模擬配對當時的決策，候選邊應由當時的供需報價和資格建立，已完成的移轉可留做事後比較。</p>
+      <p data-kind="interpretation" data-plan-ref="reputation,four">配對箭頭可先標「估計成交成本、買方環保聲譽、可用的可信度證據」。三者的單位及資料層級各有不同。若需要一個合成分數，應先定義尺度、缺值規則和各目標的係數，再用敏感度分析檢查係數對配對的影響。來源能支持屬性值的取法，係數仍由研究設計決定。</p>
+    </section>
+    <section><h2>來源</h2>[[bibliography:europe-economics2023,registry-interplay2015,ice-clear2021,eex-fee-archive,ecc-invoice,ecc-fees2021,eex-auction-fees2020,grunig2014,grunig-questionnaire,dehst2019q4,dehst2019year,icap-prices,borghesi-flori2018,abrell-transfers2024,benchmark2017]]</section>
+    <nav class="lesson-pager" aria-label="延伸閱讀"><a href="transaction-log.html">交易 log 欄位</a><a href="cdp-buyer-reputation.html">CDP 與買方環保聲譽</a><a href="ets-trade-reliability.html">合規與交易可信度 →</a></nav>
+  </article>
+</main>

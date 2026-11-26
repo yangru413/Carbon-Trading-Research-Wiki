@@ -88,5 +88,23 @@
     "title": "碳交易配對研究如何進行｜教學簡報",
     "description": "從制度、資料與模型，理解GA、ACO及實驗評估的10頁教學簡報。",
     "nav": "home"
+  },
+  {
+    "slug": "ets-trade-costs",
+    "title": "EU ETS 交易角色、成本與取樣",
+    "description": "經紀與清算的分工、歷史費率、碳價代理與移轉資料的取樣。",
+    "nav": "home"
+  },
+  {
+    "slug": "cdp-buyer-reputation",
+    "title": "用 CDP 評級估計買方環保聲譽",
+    "description": "用公開氣候評級串接法人，核對決策時點與處理缺值。",
+    "nav": "sources"
+  },
+  {
+    "slug": "ets-trade-reliability",
+    "title": "EU ETS 合規與交易可信度",
+    "description": "公開的合規表、配對前可用的交易證據及模型用途。",
+    "nav": "sources"
   }
 ]

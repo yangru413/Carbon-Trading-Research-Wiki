@@ -1,0 +1,25 @@
+<main id="main" class="wrap">
+  <div class="lesson-position"><a href="index.html#topic-datasets">← 返回研究資料</a></div>
+  <header class="article-hero">
+    <span class="tag">制度與方法</span>
+    <h1>EU ETS 合規與交易可信度</h1>
+    <p class="lede">用配對當下可見的證據，分別評估資格、法規合規與履約風險。</p>
+    <div class="meta"><span>更新：2026-11-26</span></div>
+  </header>
+  <article class="prose">
+    <section>
+      <h2>繳回配額是合規的一項要求</h2>
+      <p data-cite="eu-ets-directive,registry-2013,registry-2021" data-location="指令第 12、16 條；2020 登記規則第 10、36 條；2021 登記規則第 9、32–33 條">受管制者須申報經查證的排放，並繳回足量配額。未依期限繳足，涉及每噸 €100 為基準且按規則調整的超排罰款、公布名稱，以及補繳配額的義務。罰款未付的追繳依各國規定。帳戶被封鎖或限制時，能否發起特定移轉則看當時登記規則、帳戶狀態與主管機關處分。合規代碼本身無法用來判斷是否欠罰款或全面喪失交易資格。</p>
+      <p data-cite="union-registry,registry-2013,registry-2021" data-location="Union Registry 的 Reports；389/2013 附件 XIV、2019/1122 附件 XIII 的 Compliance statements 表">歐盟執委會 <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets/union-registry_en">Union Registry 報告區</a>可下載各年度合規表。按國別與設施 ID 或航空營運者 ID 查表。A 表示已繳足，B 表示不足，C 表示當時缺經查證的排放資料，X 表示受登記系統程序暫停影響。保留資料發布日、設施歸屬時間以及原始代碼。<a href="https://climate.ec.europa.eu/document/download/e987eacc-5268-4775-a53b-975eef1dbdd3_en?filename=compliance_2018_code_en.xlsx">2018 年合規表（Excel）</a>於 2019-05-02 公布。2019 年合規表於 2020-05-04 公布，因此在 2020 年 1 月只可用前者等已發布資料。</p>
+      <p data-kind="interpretation" data-cite="union-registry,registry-2013,registry-2021" data-location="年度表及代碼定義；以下為本站建模">對有履約義務的對象，可用「A 年數 ÷ 有 A、B、C 的年份數」做公開合規指標，另報 C 的比例與有資料的年份數。多設施先定義如何彙整，再計算公司指標。無義務、沒有對應資料或分母為零需個別標示。指標可作為交易可信度的輔助變數，能否預測雙邊按時付款、交割，仍須有各筆合約的後續結果驗證。</p>
+    </section>
+    <section>
+      <h2>配對當下可用什麼證據？</h2>
+      <p data-cite="ecc-smss,ecc-limits2020" data-location="SMSS Reporting 的 Limit Report、ECC Circular No. 50/2020">ECC 的 LRD（Limit Report Detail）是產生報表當下的現貨交易前限額快照。以 EEX 排放拍賣為例，清算會員為參與者設定財務交易限額，再按 ECC 公告的程序提供。報表反映指定市場的額度，ECC 公開的是報表格式示例。該拍賣功能自 2020 年 12 月上線，無法回填 2020 年 1 月的參與方限額。</p>
+      <p data-kind="interpretation" data-cite="registry-interplay2015,abrell-transfers2024" data-location="交易後流程；Abrell §4.2；以下為本站建模">如果系統有當事人授權，先在配對前核對帳戶可移轉性、賣方可交割量、買方可用信用或預付款，再記錄是否經清算或有款券對付（Delivery versus Payment, DvP）安排，為每項證據保留取得時點。公開資料可先使用當時發布的合規表。沒有逐筆信用或信用授權時，保留未知狀態。交易紀錄只看到配額移轉的一部分，僅用事後完成的移轉或移轉頻率，無法量出付款與交割成功率。</p>
+      <p data-cite="registry-2013,registry-2021" data-location="389/2013 附件 XIV 第 4 點；2019/1122 附件 XIII 第 4 點">研究期間的登記規則對公開逐筆移轉資料設有三年公告落差。即使完成日早於配對時點，仍應查該資料何時公開。可把公開合規、配對前實際交割保障和未知狀態分開記進研究表。</p>
+    </section>
+    <section><h2>來源</h2>[[bibliography:eu-ets-directive,registry-2013,registry-2021,union-registry,ecc-smss,ecc-limits2020,registry-interplay2015,abrell-transfers2024]]</section>
+    <nav class="lesson-pager" aria-label="延伸閱讀"><a href="sources.html">研究資料</a><a href="ets-trade-costs.html">交易角色、成本與取樣 →</a></nav>
+  </article>
+</main>

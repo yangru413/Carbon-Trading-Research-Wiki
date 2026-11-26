@@ -1,0 +1,29 @@
+<main id="main" class="wrap">
+  <div class="lesson-position"><a href="index.html#topic-datasets">← 返回研究資料</a></div>
+  <header class="article-hero">
+    <span class="tag">資料與方法</span>
+    <h1>用 CDP 評級估計買方環保聲譽</h1>
+    <p class="lede">查找公司氣候評級，核對評級時點與法人，保留缺值。</p>
+    <div class="meta"><span>更新：2026-11-26</span></div>
+  </header>
+  <article class="prose">
+    <section>
+      <h2>第一年要提供什麼？</h2>
+      <p data-plan-ref="year1,reputation">CM03 的第二年規劃承接第一年企業層級的永續評估。</p>
+      <p data-kind="interpretation" data-plan-ref="year1,reputation">交接時宜取得企業識別、指標定義、分數或機率、適用範圍、資料版本與首次可用日期，才可將評估接到買方候選名單。</p>
+      <p data-cite="cdp-scoring2022" data-kind="interpretation" data-location="第 1–3 頁">第一年的資料尚未取得時，可用 CDP 氣候變遷（Climate Change）評級當環保聲譽的代理。評級採公開方法，從揭露（D／D−）、認知（C／C−）、管理（B／B−）到領導（A／A−）。代理對應的是企業的氣候揭露與管理。完整永續、實際減排及交易違約各需要自己的觀測資料。</p>
+    </section>
+    <section>
+      <h2>到哪裡查，如何串接？</h2>
+      <p data-cite="cdp-public,cdp-licenses,cdp-academic2022" data-location="Scores and A Lists 的企業資料存取說明；2022 學術資料手冊的 Scores">先看 <a href="https://www.cdp.net/en/data/scores">CDP「Scores and A Lists」</a>的企業資料存取說明。舊版個別回覆查詢的公開方式已調整。要取得 2022 或歷史企業評級 Excel，可用 <a href="https://www.cdp.net/en/data-licenses#request-license">CDP 資料授權入口</a>詢問，或查校內圖書館是否已獲授權。<a href="https://cdn.cdp.net/cdp-production/comfy/cms/files/files/000/006/686/original/Academic_Data_Brochure_%282022_data%29.pdf#page=8">2022 學術資料手冊</a>列出此項資料。公開做法是逐家公司查證其年報或永續報告是否揭露當年的 CDP Climate Change 評級，逐筆保留頁碼與日期；可查範圍依公司揭露而定。</p>
+      <p data-kind="interpretation" data-cite="cdp-scoring2022,gleif-level2" data-location="CDP 評分說明第 2–3 頁；GLEIF Level 2 定義；以下為本站串接方法">用 Excel Power Query 或 pandas 建一張「帳戶 → 法人 → 評級主體」對照。先用 <a href="https://www.gleif.org/en/lei-data/access-and-use-lei-data/level-2-data-who-owns-whom">GLEIF 法人與母公司資料</a>核對法人識別編碼（LEI）或正式名稱和國別，確認母公司覆蓋時才繼承，另記標籤及證據。最後留下原文等級、評級年、首次公開日、來源網址與串接狀態。只採配對前已公布的評級。</p>
+    </section>
+    <section>
+      <h2>如何處理 D、F 和查不到的公司？</h2>
+      <p data-cite="cdp-scoring2022,cdp-annual2023" data-location="評級說明第 2–3 頁；FY22–23 年報 2022 揭露統計">D 表示達到揭露階段。2022 方法中，F 反映受邀公司未回覆或資訊不足以評估。未查到（<code>NA</code>）的原因可包括未受邀、未公開、無法核對法人或年份缺資料。2022 全球揭露企業數較前一年多，個別樣本的覆蓋仍需核對。較晚公布的評級可用於較晚的樣本，也可用於另立的事後情境。</p>
+      <p data-kind="example">可在先導模型中測試 D／C／B／A 分別給 0、1/3、2/3、1，保留原始字母並另列 F 和 NA。這是序位轉數值的示意。未評級公司的環保聲譽無法由此和 D 排高低。報告應列配對樣本覆蓋率並測試缺值處理是否改變結果。</p>
+    </section>
+    <section><h2>來源</h2>[[bibliography:cdp-scoring2022,cdp-public,cdp-licenses,cdp-academic2022,gleif-level2,cdp-annual2023]]</section>
+    <nav class="lesson-pager" aria-label="延伸閱讀"><a href="sources.html">研究資料</a><a href="ets-trade-reliability.html">合規與交易可信度 →</a></nav>
+  </article>
+</main>

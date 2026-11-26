@@ -80,6 +80,13 @@
         "title": "可行性與供需平衡",
         "summary": "總量、交易上限與未滿足需求的處理。",
         "status": "planned"
+      },
+      {
+        "title": "EU ETS 交易角色、成本與取樣",
+        "summary": "比較經紀與清算，估計成交成本並檢查歷史樣本與價格。",
+        "status": "ready",
+        "href": "ets-trade-costs.html",
+        "parent": "index.html#topic-matching"
       }
     ]
   },
@@ -129,6 +136,20 @@
         "title": "資料品質、價格與時間對齊",
         "summary": "合併編碼、缺值、重複檢查與版本記錄，並區分現貨、期貨、代理價格及前視偏誤。",
         "status": "planned"
+      },
+      {
+        "title": "用 CDP 評級估計買方環保聲譽",
+        "summary": "從公開評級串接法人，按決策時點使用並保留缺值。",
+        "status": "ready",
+        "href": "cdp-buyer-reputation.html",
+        "parent": "sources.html"
+      },
+      {
+        "title": "EU ETS 合規與交易可信度",
+        "summary": "年度合規、帳戶資格與付款交割的證據有何差別？",
+        "status": "ready",
+        "href": "ets-trade-reliability.html",
+        "parent": "sources.html"
       }
     ]
   },
